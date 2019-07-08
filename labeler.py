@@ -11,7 +11,7 @@ print('-> imports loaded.')
 
 
 # parameters for psycopg2
-params = eval(open('cred.auth', 'r').read())
+params = eval(open('../pwd/cred.auth', 'r').read())
 
 # set up connection with DB
 try:
@@ -97,7 +97,7 @@ def segment_continuous(cur, fh, threshold=3, to_file=False):
     return segments
 
 
-def extract_window_records(segment, window_size=200, window_offset=100, min_size=20):
+def extract_window_records(segment, window_size=600, window_offset=300, min_size=20):
     """Extracts time windows with offset from a temporally continuous segment.
 
     Parameter(s):
@@ -232,6 +232,8 @@ if __name__ == '__main__':
 
     # iterate through vessels
     for mmsis, database in zip(TOP, ['dutch_fishing_dynamic', 'dutch_cargo_dynamic']):
+        print(mmsis)
+        sys.exit()
 
         for mmsi in mmsis:
             fh = open('segments/{}.csv'.format(mmsi), 'w') if to_file else False

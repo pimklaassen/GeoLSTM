@@ -17,7 +17,7 @@ set_session(Session(config=ConfigProto(device_count={'GPU': 0})))
 
 labels = []
 
-with open('labeled_data/labels.txt', 'r') as fh:
+with open('../Labeled/labels.txt', 'r') as fh:
     for line in fh.readlines():
         label = line.split(': ')[1].strip()
 
@@ -31,7 +31,7 @@ with open('labeled_data/labels.txt', 'r') as fh:
 samples = []
 
 for i in range(len(labels) - 1):
-    sample = np.load('labeled_data/features_{}.npy'.format(i))
+    sample = np.load('../Labeled/features_{}.npy'.format(i))
     if labels[i] == 'NULL':
         continue
     if len(sample) == 0:
@@ -68,10 +68,6 @@ def pad_sequences(sequences):
 
 samples = pad_sequences(samples)
 
-print(samples.shape)
-print(labels)
-print(samples)
-
 no_samples, timesteps, features = samples.shape
 
 validate_x = samples[:200]
@@ -89,15 +85,15 @@ optimizer = optimizers.Adam()
 LSTM_model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
 
 # fit model
-history = LSTM_model.fit(train_x, train_y, epochs=1000, batch_size=256, validation_data=(validate_x, validate_y), verbose=2)
+history = LSTM_model.fit(train_x, train_y, epochs=100, batch_size=256, validation_data=(validate_x, validate_y), verbose=2)
 
 prediction = LSTM_model.predict(validate_x)
 
 prediction = np.argmax(prediction, axis=1)
 validate_y = np.argmax(validate_y, axis=1)
 
-sns.heatmap(confusion_matrix(validate_y, prediction), annot=True, fmt='.5g')
-plt.show()
+# sns.heatmap(confusion_matrix(validate_y, prediction), annot=True, fmt='.5g')
+# plt.show()
 
 # summarize history for loss
 plt.plot(history.history['loss'])
