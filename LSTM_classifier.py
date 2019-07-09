@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import os
@@ -82,5 +81,3 @@ for epoch in range(100):
     res = np.hstack((pred, train_y))
 
     print('epoch: {}\n\n{}\n'.format(epoch, res))
-
-    sys.exit()
