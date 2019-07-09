@@ -80,7 +80,7 @@ def batches(l, n):
         yield l[i:i + n]
 
 
-for epoch in range(100):
+for epoch in range(1000):
 
     print('epoch: {}\n'.format(epoch))
 
