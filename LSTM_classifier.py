@@ -33,9 +33,14 @@ def pad_sequences(sequences, timesteps=6000):
 
 sample_info = []
 datadir = 'Data/Features/'
+normalization_values_max = np.array([0., 0., 0., 0., 0., 0.])
 
 for fname in os.listdir(datadir):
-    length = len(np.load(datadir + fname))
+    sample = np.load(datadir + fname)
+    max_values = np.max(sample, axis=0)
+    normalization_values_max[normalization_values_max < max_values] = max_values[normalization_values_max < max_values]
+
+    length = len(sample)
     class_no, mmsi, seg_no = fname.split('.')[0].split('_')
     sample_info.append([length, int(class_no), int(mmsi), int(seg_no)])
 
@@ -76,7 +81,8 @@ for epoch in range(100):
 
     for info in train_x_info:
         fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
-        train_x.append(np.load(fname))
+        sample = np.load(fname) / normalization_values_max
+        train_x.append(sample)
 
     train_x = pad_sequences(train_x)
 
