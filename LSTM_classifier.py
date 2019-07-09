@@ -60,7 +60,7 @@ lstm_2 = LSTM(32, activation=hard_sigmoid, return_sequences=True)(lstm_1)
 output = LSTM(1, activation=hard_sigmoid)(lstm_2)
 
 LSTM_model = Model(inputs, output)
-LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
