@@ -21,7 +21,7 @@ def pad_sequences(sequences, timesteps=6000):
     features = len(sequences[0][0])
 
     # create template
-    template = np.zeros((no_sequences, timesteps, features))
+    template = np.ones((no_sequences, timesteps, features)) * -1.
 
     # fill in template
     for i, sequence in enumerate(sequences):
@@ -54,7 +54,7 @@ test = sample_info[break_inx:]
 features = 6
 
 inputs = Input(shape=(None, features))
-mask = Masking(mask_value=0.0)(inputs)  # WATCH OUT: masking 0
+mask = Masking(mask_value=-1.)(inputs)
 lstm_1 = LSTM(200)(mask)
 output = Dense(1, activation='sigmoid')(lstm_1)
 
@@ -79,4 +79,4 @@ for epoch in range(100):
     pred = LSTM_model.predict(train_x)
     res = np.hstack((pred, train_y))
 
-    print('epoch: {}\n\n{}\nloss: {}\n'.format(epoch, res, loss))
+    print('epoch: {}\n\n{}\n\nloss: {} accuracy: {}\n'.format(epoch, res, loss, accuracy))
