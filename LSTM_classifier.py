@@ -75,7 +75,7 @@ LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['a
 print(LSTM_model.summary())
 
 for epoch in range(100):
-    train_x_info = [train[[26, 27]]  # np.random.choice(range(len(train)), size=32, replace=False)]
+    train_x_info = train[[26, 27]]  # np.random.choice(range(len(train)), size=32, replace=False)]
     train_y = train_x_info[:, 1, None]
     train_x = []
 
