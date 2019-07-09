@@ -7,6 +7,7 @@ from keras.layers import LSTM, Input, Masking, Dense
 from keras.activations import hard_sigmoid
 from keras.backend.tensorflow_backend import set_session
 from tensorflow import Session, ConfigProto
+from keras.optimizers import SGD
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 set_session(Session(config=ConfigProto(device_count={'GPU': 0})))
@@ -55,11 +56,15 @@ features = 6
 
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=-1.)(inputs)
-lstm_1 = LSTM(200, activation='relu')(mask)
+lstm_1 = LSTM(200)(mask)
 output = Dense(1, activation='sigmoid')(lstm_1)
 
 LSTM_model = Model(inputs, output)
-LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
+
+# optimizers
+sgd = SGD(lr=0.01, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=False)
+
+LSTM_model.compile(optimizer=sgd, loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
