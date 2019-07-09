@@ -79,4 +79,4 @@ for epoch in range(100):
     pred = LSTM_model.predict(train_x)
     res = np.hstack((pred, train_y))
 
-    print('epoch: {}\n\n{}\n\nloss: {} accuracy: {}\n'.format(epoch, res, loss, accuracy))
+    print('epoch: {}\n\n{}\n\nloss: {} accuracy: {}\n'.format(epoch, res, loss, acc))
