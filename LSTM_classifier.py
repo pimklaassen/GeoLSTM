@@ -63,7 +63,7 @@ output = Dense(1, activation='sigmoid')(norm)
 LSTM_model = Model(inputs, output)
 
 # optimizers
-sgd = SGD(lr=0.1, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=True)
+sgd = SGD(lr=0.01, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=True)
 
 LSTM_model.compile(optimizer=sgd, loss='binary_crossentropy', metrics=['accuracy'])
 
