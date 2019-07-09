@@ -126,9 +126,9 @@ for epoch in range(100):
     for info in test_val_batch:
         fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
         sample = np.load(fname) / normalization_values_max
-        test_val_batch.append(sample)
+        test_val_x.append(sample)
 
-    test_val_batch = pad_sequences(test_val_batch)
-    loss, acc = LSTM_model.test_on_batch(test_val_batch, test_val_y)
+    test_val_x = pad_sequences(test_val_x)
+    loss, acc = LSTM_model.test_on_batch(test_val_x, test_val_y)
 
     print('test loss: {} accuracy: {}\n'.format(loss, acc))
