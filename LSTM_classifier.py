@@ -7,7 +7,7 @@ from keras.layers import LSTM, Input, Masking, Dense, BatchNormalization
 from keras.activations import hard_sigmoid
 from keras.backend.tensorflow_backend import set_session
 from tensorflow import Session, ConfigProto
-from keras.optimizers import SGD, Nadam
+from keras.optimizers import SGD
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 set_session(Session(config=ConfigProto(device_count={'GPU': 0})))
@@ -65,12 +65,12 @@ LSTM_model = Model(inputs, output)
 # optimizers
 sgd = SGD(lr=0.01, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=True)
 
-LSTM_model.compile(optimizer=Nadam, loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
 for epoch in range(100):
-    train_x_info = train[np.random.choice(range(len(train)), size=32, replace=False)]
+    train_x_info = train[np.random.choice(range(len(train)), size=64, replace=False)]
     train_y = train_x_info[:, 1, None]
     train_x = []
 
