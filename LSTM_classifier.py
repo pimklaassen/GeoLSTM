@@ -55,11 +55,11 @@ features = 6
 
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=0.0)(inputs)  # WATCH OUT: masking 0
-lstm_1 = LSTM(100)(mask)
+lstm_1 = LSTM(200)(mask)
 output = Dense(1, activation='sigmoid')(lstm_1)
 
 LSTM_model = Model(inputs, output)
-LSTM_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
@@ -74,9 +74,9 @@ for epoch in range(100):
 
     train_x = pad_sequences(train_x)
 
-    LSTM_model.train_on_batch(train_x, train_y)
+    loss, acc = LSTM_model.train_on_batch(train_x, train_y)
 
     pred = LSTM_model.predict(train_x)
     res = np.hstack((pred, train_y))
 
-    print('epoch: {}\n\n{}\n'.format(epoch, res))
+    print('epoch: {}\n\n{}\nloss: {}\n'.format(epoch, res, loss))
