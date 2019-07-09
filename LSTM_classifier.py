@@ -55,7 +55,7 @@ features = 6
 
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=-1.)(inputs)
-lstm_1 = LSTM(200, activation='softmax')(mask)
+lstm_1 = LSTM(200, activation='relu')(mask)
 output = Dense(1, activation='sigmoid')(lstm_1)
 
 LSTM_model = Model(inputs, output)
