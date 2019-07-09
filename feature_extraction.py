@@ -139,6 +139,7 @@ def speed_only(content):
 
 
 def rot_only(content):
+    # TODO: finish function
     diflon = np.diff(content['lon'])
     diflat = np.diff(content['lat'])
     diflat[diflat == 0] = 1e-10

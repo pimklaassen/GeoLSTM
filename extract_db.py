@@ -99,7 +99,7 @@ def segment_continuous(shiptype, cur, threshold=3, min_size=50):
 
 if __name__ == '__main__':
     table_names = ['dutch_fishing_dynamic', 'dutch_cargo_dynamic']
-    amount = 50
+    amount = 2
     threshold = 3
 
     # retrieve mmsi's
