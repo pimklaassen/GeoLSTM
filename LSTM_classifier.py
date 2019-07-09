@@ -113,7 +113,7 @@ for epoch in range(100):
 
     train_val_x = pad_sequences(train_val_x)
     loss, acc = LSTM_model.test_on_batch(train_val_x, train_val_y)
-    pred = LSTM_model.predict(train_val_x, train_val_y)
+    pred = LSTM_model.predict(train_val_x)
 
     res = np.hstack((pred, train_val_y))
 
