@@ -74,19 +74,25 @@ LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['a
 
 print(LSTM_model.summary())
 
+
+def batches(l, n):
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
+
+
 for epoch in range(100):
-    train_x_info = train[[26, 27]]  # np.random.choice(range(len(train)), size=32, replace=False)]
-    train_y = train_x_info[:, 1, None]
-    train_x = []
+    for batch in batches(train, 16):
+        train_y = batch[:, 1, None]
+        train_x = []
 
-    for info in train_x_info:
-        fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
-        sample = np.load(fname) / normalization_values_max
-        train_x.append(sample)
+        for info in batch:
+            fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
+            sample = np.load(fname) / normalization_values_max
+            train_x.append(sample)
 
-    train_x = pad_sequences(train_x)
+        train_x = pad_sequences(train_x)
 
-    loss, acc = LSTM_model.train_on_batch(train_x, train_y)
+        loss, acc = LSTM_model.train_on_batch(train_x, train_y)
 
     pred = LSTM_model.predict(train_x)
     res = np.hstack((pred, train_y))
