@@ -65,7 +65,7 @@ LSTM_model = Model(inputs, output)
 # optimizers
 sgd = SGD(lr=0.01, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=True)
 
-LSTM_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
