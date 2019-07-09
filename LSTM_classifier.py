@@ -3,7 +3,7 @@ import sys
 import os
 
 from keras.models import Model
-from keras.layers import LSTM, Input, Masking, Dense
+from keras.layers import LSTM, Input, Masking, Dense, BatchNormalization
 from keras.activations import hard_sigmoid
 from keras.backend.tensorflow_backend import set_session
 from tensorflow import Session, ConfigProto
@@ -57,7 +57,8 @@ features = 6
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=-1.)(inputs)
 lstm_1 = LSTM(200)(mask)
-output = Dense(1, activation='sigmoid')(lstm_1)
+norm = BatchNormalization()(lstm_1)
+output = Dense(1, activation='sigmoid')(norm)
 
 LSTM_model = Model(inputs, output)
 
