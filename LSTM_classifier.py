@@ -83,7 +83,6 @@ def batches(l, n):
 for epoch in range(100):
 
     print('epoch: {}\n'.format(epoch))
-    print('#')
 
     for batch in batches(train, 32):
         train_y = batch[:, 1, None]
@@ -98,10 +97,6 @@ for epoch in range(100):
 
         LSTM_model.train_on_batch(train_x, train_y)
 
-        print('|')
-
-    print('#\n')
-
     train_val_x = []
     train_val_batch = train[np.random.choice(len(train), size=32)]
     train_val_y = train_val_batch[:, 1, None]
@@ -113,11 +108,8 @@ for epoch in range(100):
 
     train_val_x = pad_sequences(train_val_x)
     loss, acc = LSTM_model.test_on_batch(train_val_x, train_val_y)
-    pred = LSTM_model.predict(train_val_x)
 
-    res = np.hstack((pred, train_val_y))
-
-    print('{}\n\ntraining loss: {} accuracy: {}'.format(res, loss, acc))
+    print('training loss: {} accuracy: {}'.format(loss, acc))
 
     test_val_x = []
     test_val_batch = test[np.random.choice(len(test), size=16)]
