@@ -120,7 +120,7 @@ for epoch in range(100):
     print('{}\n\ntraining loss: {} accuracy: {}'.format(res, loss, acc))
 
     test_val_x = []
-    test_val_batch = test[np.random.choice(len(train), size=16)]
+    test_val_batch = test[np.random.choice(len(test), size=16)]
     test_val_y = test_val_batch[:, 1, None]
 
     for info in test_val_batch:
