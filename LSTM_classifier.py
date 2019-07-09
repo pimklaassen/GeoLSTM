@@ -81,7 +81,11 @@ def batches(l, n):
 
 
 for epoch in range(100):
-    for batch in batches(train, 16):
+
+    print('epoch: {}\n'.format(epoch))
+    print('#')
+
+    for batch in batches(train, 32):
         train_y = batch[:, 1, None]
         train_x = []
 
@@ -92,9 +96,39 @@ for epoch in range(100):
 
         train_x = pad_sequences(train_x)
 
-        loss, acc = LSTM_model.train_on_batch(train_x, train_y)
+        LSTM_model.train_on_batch(train_x, train_y)
 
-    pred = LSTM_model.predict(train_x)
-    res = np.hstack((pred, train_y))
+        print('|')
 
-    print('epoch: {}\n\n{}\n\nloss: {} accuracy: {}\n'.format(epoch, res, loss, acc))
+    print('#\n')
+
+    train_val_x = []
+    train_val_batch = train[np.random.choice(len(train), size=32)]
+    train_val_y = train_val_batch[:, 1, None]
+
+    for info in train_val_batch:
+        fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
+        sample = np.load(fname) / normalization_values_max
+        train_val_x.append(sample)
+
+    train_val_x = pad_sequences(train_val_x)
+    loss, acc = LSTM_model.test_on_batch(train_val_x, train_val_y)
+    pred = LSTM_model.predict(train_val_x, train_val_y)
+
+    res = np.hstack((pred, train_val_y))
+
+    print('{}\n\ntraining loss: {} accuracy: {}'.format(res, loss, acc))
+
+    test_val_x = []
+    test_val_batch = test[np.random.choice(len(train), size=16)]
+    test_val_y = test_val_batch[:, 1, None]
+
+    for info in test_val_batch:
+        fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
+        sample = np.load(fname) / normalization_values_max
+        test_val_batch.append(sample)
+
+    test_val_batch = pad_sequences(test_val_batch)
+    loss, acc = LSTM_model.test_on_batch(test_val_batch, test_val_y)
+
+    print('test loss: {} accuracy: {}\n'.format(loss, acc))
