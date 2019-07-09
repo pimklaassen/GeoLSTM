@@ -135,6 +135,7 @@ def speed_only(content):
     f5 = np.quantile(speed, 0.75)
     f6 = max(speed)
 
+    return [f1, f2, f3, f4, f5, f6]
     return normalize([[f1, f2, f3, f4, f5, f6]]).ravel()
 
 
