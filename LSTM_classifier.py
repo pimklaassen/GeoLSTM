@@ -61,7 +61,7 @@ features = 6
 
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=-1.)(inputs)
-lstm_1 = LSTM(200)(mask)
+lstm_1 = LSTM(512)(mask)
 norm = BatchNormalization()(lstm_1)
 output = Dense(1, activation='sigmoid')(norm)
 
