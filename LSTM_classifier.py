@@ -3,7 +3,7 @@ import sys
 import os
 
 from keras.models import Model
-from keras.layers import LSTM, Input, Masking
+from keras.layers import LSTM, Input, Masking, Dense
 from keras.activations import hard_sigmoid
 from keras.backend.tensorflow_backend import set_session
 from tensorflow import Session, ConfigProto
@@ -55,12 +55,11 @@ features = 6
 
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=0.0)(inputs)  # WATCH OUT: masking 0
-lstm_1 = LSTM(32, activation=hard_sigmoid, return_sequences=True)(mask)
-lstm_2 = LSTM(32, activation=hard_sigmoid, return_sequences=True)(lstm_1)
-output = LSTM(1, activation=hard_sigmoid)(lstm_2)
+lstm_1 = LSTM(100)(mask)
+output = Dense(1, activation='sigmoid')(lstm_1)
 
 LSTM_model = Model(inputs, output)
-LSTM_model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
