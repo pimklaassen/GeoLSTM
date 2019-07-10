@@ -62,8 +62,8 @@ features = 6
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=-1.)(inputs)
 lstm_1 = LSTM(256)(mask)
-norm = BatchNormalization()(lstm_1)
-output = Dense(1, activation='sigmoid')(norm)
+# norm = BatchNormalization()(lstm_1)
+output = Dense(1, activation='sigmoid')(lstm_1)
 
 LSTM_model = Model(inputs, output)
 
@@ -87,7 +87,7 @@ for epoch in range(10):
 
     print('epoch: {}\n'.format(epoch))
 
-    for batch in batches(train, 16):
+    for batch in batches(train, 2):
         train_y = batch[:, 1, None]
         train_x = []
 
@@ -100,8 +100,11 @@ for epoch in range(10):
 
         LSTM_model.train_on_batch(train_x, train_y)
 
+        # TURN THIS ON FOR TESTING ON SMALL SET OF SAMPLES
+        break
+
     train_val_x = []
-    train_val_batch = train[np.random.choice(len(train), size=16)]
+    train_val_batch = batch#train[np.random.choice(len(train), size=16)]
     train_val_y = train_val_batch[:, 1, None]
 
     for info in train_val_batch:
