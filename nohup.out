@@ -1,0 +1,5025 @@
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/pim/python/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, None, 6)           0         
+_________________________________________________________________
+masking_1 (Masking)          (None, None, 6)           0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 256)               269312    
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 256)               1024      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 257       
+=================================================================
+Total params: 270,593
+Trainable params: 270,081
+Non-trainable params: 512
+_________________________________________________________________
+None
+epoch: 0
+
+WARNING:tensorflow:From /home/pim/python/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+training loss: 0.5927395224571228 accuracy: 0.8125
+test loss: 0.6769874095916748 accuracy: 0.6875
+
+epoch: 1
+
+training loss: 0.6357630491256714 accuracy: 0.625
+test loss: 0.7330386638641357 accuracy: 0.5
+
+epoch: 2
+
+training loss: 0.6164358258247375 accuracy: 0.6875
+test loss: 0.5930992364883423 accuracy: 0.4375
+
+epoch: 3
+
+training loss: 0.5932718515396118 accuracy: 0.75
+test loss: 0.7131876945495605 accuracy: 0.5625
+
+epoch: 4
+
+training loss: 0.6047244668006897 accuracy: 0.6875
+test loss: 0.4680749773979187 accuracy: 0.625
+
+epoch: 5
+
+training loss: 0.6484827995300293 accuracy: 0.5
+test loss: 0.6469061374664307 accuracy: 0.5
+
+epoch: 6
+
+training loss: 0.6365488767623901 accuracy: 0.59375
+test loss: 0.6200124621391296 accuracy: 0.625
+
+epoch: 7
+
+training loss: 0.5712233781814575 accuracy: 0.5625
+test loss: 0.8213032484054565 accuracy: 0.5625
+
+epoch: 8
+
+training loss: 0.6545336246490479 accuracy: 0.59375
+test loss: 0.9435840845108032 accuracy: 0.6875
+
+epoch: 9
+
+training loss: 0.6403076648712158 accuracy: 0.625
+test loss: 0.6721951365470886 accuracy: 0.875
+
+epoch: 10
+
+training loss: 0.7675571441650391 accuracy: 0.65625
+test loss: 1.1281063556671143 accuracy: 0.5625
+
+epoch: 11
+
+training loss: 0.6782689094543457 accuracy: 0.53125
+test loss: 0.9885222911834717 accuracy: 0.3125
+
+epoch: 12
+
+training loss: 0.651943564414978 accuracy: 0.5625
+test loss: 1.4721641540527344 accuracy: 0.625
+
+epoch: 13
+
+training loss: 0.704105794429779 accuracy: 0.59375
+test loss: 0.6696611046791077 accuracy: 0.5625
+
+epoch: 14
+
+training loss: 0.5955584049224854 accuracy: 0.65625
+test loss: 0.6804471611976624 accuracy: 0.8125
+
+epoch: 15
+
+training loss: 0.6114085912704468 accuracy: 0.6875
+test loss: 0.5460896492004395 accuracy: 0.5625
+
+epoch: 16
+
+training loss: 0.7867403030395508 accuracy: 0.5625
+test loss: 0.9825595617294312 accuracy: 0.5
+
+epoch: 17
+
+training loss: 0.615163266658783 accuracy: 0.6875
+test loss: 0.6220662593841553 accuracy: 0.6875
+
+epoch: 18
+
+training loss: 0.5749642252922058 accuracy: 0.75
+test loss: 0.9129694700241089 accuracy: 0.25
+
+epoch: 19
+
+training loss: 0.5871472358703613 accuracy: 0.65625
+test loss: 0.8493777513504028 accuracy: 0.5625
+
+epoch: 20
+
+training loss: 0.5720452070236206 accuracy: 0.78125
+test loss: 0.6655839681625366 accuracy: 0.5625
+
+epoch: 21
+
+training loss: 0.5869291424751282 accuracy: 0.6875
+test loss: 0.8714078664779663 accuracy: 0.375
+
+epoch: 22
+
+training loss: 0.5891110897064209 accuracy: 0.71875
+test loss: 0.44530636072158813 accuracy: 0.75
+
+epoch: 23
+
+training loss: 0.5871709585189819 accuracy: 0.65625
+test loss: 0.8871443271636963 accuracy: 0.375
+
+epoch: 24
+
+training loss: 0.5359490513801575 accuracy: 0.78125
+test loss: 0.7780177593231201 accuracy: 0.375
+
+epoch: 25
+
+training loss: 0.5643353462219238 accuracy: 0.625
+test loss: 0.9557033777236938 accuracy: 0.4375
+
+epoch: 26
+
+training loss: 0.5621340274810791 accuracy: 0.6875
+test loss: 0.7160121202468872 accuracy: 0.6875
+
+epoch: 27
+
+training loss: 0.6426572203636169 accuracy: 0.46875
+test loss: 0.3751596212387085 accuracy: 0.75
+
+epoch: 28
+
+training loss: 0.603583574295044 accuracy: 0.59375
+test loss: 0.5678716897964478 accuracy: 0.75
+
+epoch: 29
+
+training loss: 0.5442681312561035 accuracy: 0.71875
+test loss: 0.4705190062522888 accuracy: 0.75
+
+epoch: 30
+
+training loss: 0.5890053510665894 accuracy: 0.53125
+test loss: 0.6115230321884155 accuracy: 0.8125
+
+epoch: 31
+
+training loss: 0.6919009685516357 accuracy: 0.53125
+test loss: 0.4769308567047119 accuracy: 0.8125
+
+epoch: 32
+
+training loss: 0.6564547419548035 accuracy: 0.625
+test loss: 0.4295840263366699 accuracy: 0.6875
+
+epoch: 33
+
+training loss: 0.5652250051498413 accuracy: 0.71875
+test loss: 0.40800321102142334 accuracy: 0.75
+
+epoch: 34
+
+training loss: 0.5924234390258789 accuracy: 0.59375
+test loss: 0.6020509600639343 accuracy: 0.75
+
+epoch: 35
+
+training loss: 1.2431185245513916 accuracy: 0.375
+test loss: 1.2186979055404663 accuracy: 0.625
+
+epoch: 36
+
+training loss: 0.4294746220111847 accuracy: 0.75
+test loss: 0.5721203088760376 accuracy: 0.8125
+
+epoch: 37
+
+training loss: 0.5173619985580444 accuracy: 0.78125
+test loss: 0.7426306009292603 accuracy: 0.5625
+
+epoch: 38
+
+training loss: 0.6070734262466431 accuracy: 0.59375
+test loss: 0.8815662860870361 accuracy: 0.5625
+
+epoch: 39
+
+training loss: 0.6351377964019775 accuracy: 0.625
+test loss: 0.8004269599914551 accuracy: 0.5625
+
+epoch: 40
+
+training loss: 0.5273433327674866 accuracy: 0.6875
+test loss: 0.906175434589386 accuracy: 0.5625
+
+epoch: 41
+
+training loss: 0.38198941946029663 accuracy: 0.84375
+test loss: 1.071331262588501 accuracy: 0.5625
+
+epoch: 42
+
+training loss: 0.5062140226364136 accuracy: 0.6875
+test loss: 0.8490381240844727 accuracy: 0.5625
+
+epoch: 43
+
+training loss: 0.46633291244506836 accuracy: 0.75
+test loss: 0.682895839214325 accuracy: 0.8125
+
+epoch: 44
+
+training loss: 0.7929607033729553 accuracy: 0.59375
+test loss: 0.8402678966522217 accuracy: 0.6875
+
+epoch: 45
+
+training loss: 1.243970513343811 accuracy: 0.5625
+test loss: 1.2175822257995605 accuracy: 0.6875
+
+epoch: 46
+
+training loss: 0.6982066631317139 accuracy: 0.5625
+test loss: 1.319631814956665 accuracy: 0.4375
+
+epoch: 47
+
+training loss: 0.5974392890930176 accuracy: 0.6875
+test loss: 0.6666250228881836 accuracy: 0.625
+
+epoch: 48
+
+training loss: 0.5199913382530212 accuracy: 0.625
+test loss: 0.5702614784240723 accuracy: 0.5625
+
+epoch: 49
+
+training loss: 0.6554545760154724 accuracy: 0.5625
+test loss: 0.6815468072891235 accuracy: 0.625
+
+epoch: 50
+
+training loss: 0.637524425983429 accuracy: 0.65625
+test loss: 0.7454243898391724 accuracy: 0.5625
+
+epoch: 51
+
+training loss: 0.5077398419380188 accuracy: 0.78125
+test loss: 0.6659842133522034 accuracy: 0.6875
+
+epoch: 52
+
+training loss: 0.4762263000011444 accuracy: 0.75
+test loss: 0.6151221990585327 accuracy: 0.5625
+
+epoch: 53
+
+training loss: 0.45939093828201294 accuracy: 0.78125
+test loss: 0.6114968061447144 accuracy: 0.6875
+
+epoch: 54
+
+training loss: 0.6135119199752808 accuracy: 0.5625
+test loss: 0.8730047941207886 accuracy: 0.5
+
+epoch: 55
+
+training loss: 0.42976993322372437 accuracy: 0.71875
+test loss: 0.3366333842277527 accuracy: 0.875
+
+epoch: 56
+
+training loss: 0.8058165311813354 accuracy: 0.4375
+test loss: 0.570960283279419 accuracy: 0.875
+
+epoch: 57
+
+training loss: 0.5270954966545105 accuracy: 0.6875
+test loss: 0.65664142370224 accuracy: 0.8125
+
+epoch: 58
+
+training loss: 0.549336850643158 accuracy: 0.6875
+test loss: 0.7895805835723877 accuracy: 0.6875
+
+epoch: 59
+
+training loss: 0.46144402027130127 accuracy: 0.6875
+test loss: 0.804486870765686 accuracy: 0.625
+
+epoch: 60
+
+training loss: 0.5102477073669434 accuracy: 0.6875
+test loss: 0.2992919683456421 accuracy: 1.0
+
+epoch: 61
+
+training loss: 0.47304990887641907 accuracy: 0.71875
+test loss: 3.626039505004883 accuracy: 0.1875
+
+epoch: 62
+
+training loss: 0.446331262588501 accuracy: 0.8125
+test loss: 0.42597249150276184 accuracy: 0.8125
+
+epoch: 63
+
+training loss: 0.3787599205970764 accuracy: 0.84375
+test loss: 0.6081061363220215 accuracy: 0.625
+
+epoch: 64
+
+training loss: 0.5753251910209656 accuracy: 0.65625
+test loss: 0.6901153922080994 accuracy: 0.625
+
+epoch: 65
+
+training loss: 0.4895738363265991 accuracy: 0.78125
+test loss: 0.8042268753051758 accuracy: 0.5625
+
+epoch: 66
+
+training loss: 0.5454215407371521 accuracy: 0.6875
+test loss: 0.7404724359512329 accuracy: 0.4375
+
+epoch: 67
+
+training loss: 0.40299952030181885 accuracy: 0.75
+test loss: 0.6810506582260132 accuracy: 0.6875
+
+epoch: 68
+
+training loss: 0.4559698700904846 accuracy: 0.875
+test loss: 0.7807203531265259 accuracy: 0.5
+
+epoch: 69
+
+training loss: 0.421006977558136 accuracy: 0.78125
+test loss: 0.5728925466537476 accuracy: 0.75
+
+epoch: 70
+
+training loss: 0.5427321195602417 accuracy: 0.71875
+test loss: 0.3344130218029022 accuracy: 0.8125
+
+epoch: 71
+
+training loss: 0.5201813578605652 accuracy: 0.71875
+test loss: 0.8477001786231995 accuracy: 0.6875
+
+epoch: 72
+
+training loss: 0.5533735752105713 accuracy: 0.75
+test loss: 0.538593053817749 accuracy: 0.875
+
+epoch: 73
+
+training loss: 0.37397491931915283 accuracy: 0.75
+test loss: 0.9050483107566833 accuracy: 0.5625
+
+epoch: 74
+
+training loss: 0.43854087591171265 accuracy: 0.59375
+test loss: 0.7505263090133667 accuracy: 0.875
+
+epoch: 75
+
+training loss: 0.45955368876457214 accuracy: 0.625
+test loss: 0.5905395746231079 accuracy: 0.6875
+
+epoch: 76
+
+training loss: 0.35230129957199097 accuracy: 0.90625
+test loss: 1.0248727798461914 accuracy: 0.625
+
+epoch: 77
+
+training loss: 0.39896470308303833 accuracy: 0.78125
+test loss: 0.5113625526428223 accuracy: 0.8125
+
+epoch: 78
+
+training loss: 0.27599143981933594 accuracy: 0.90625
+test loss: 0.9294390678405762 accuracy: 0.6875
+
+epoch: 79
+
+training loss: 0.30124759674072266 accuracy: 0.90625
+test loss: 0.6494293212890625 accuracy: 0.75
+
+epoch: 80
+
+training loss: 0.6222229599952698 accuracy: 0.625
+test loss: 0.6424724459648132 accuracy: 0.6875
+
+epoch: 81
+
+training loss: 0.8544723987579346 accuracy: 0.53125
+test loss: 1.3532884120941162 accuracy: 0.4375
+
+epoch: 82
+
+training loss: 0.6281969547271729 accuracy: 0.78125
+test loss: 0.5470579862594604 accuracy: 0.625
+
+epoch: 83
+
+training loss: 0.8398898243904114 accuracy: 0.59375
+test loss: 0.6234838962554932 accuracy: 0.8125
+
+epoch: 84
+
+training loss: 0.9789864420890808 accuracy: 0.5625
+test loss: 1.061286211013794 accuracy: 0.5
+
+epoch: 85
+
+training loss: 0.824028491973877 accuracy: 0.65625
+test loss: 1.4344416856765747 accuracy: 0.625
+
+epoch: 86
+
+training loss: 0.8590447306632996 accuracy: 0.59375
+test loss: 0.8910312056541443 accuracy: 0.75
+
+epoch: 87
+
+training loss: 2.2331535816192627 accuracy: 0.65625
+test loss: 1.6361417770385742 accuracy: 0.75
+
+epoch: 88
+
+training loss: 0.9269587993621826 accuracy: 0.53125
+test loss: 0.4959173798561096 accuracy: 0.8125
+
+epoch: 89
+
+training loss: 0.9899433851242065 accuracy: 0.46875
+test loss: 2.2431678771972656 accuracy: 0.3125
+
+epoch: 90
+
+training loss: 0.8605421185493469 accuracy: 0.6875
+test loss: 1.253252387046814 accuracy: 0.4375
+
+epoch: 91
+
+training loss: 0.9050740599632263 accuracy: 0.5
+test loss: 0.6684278249740601 accuracy: 0.6875
+
+epoch: 92
+
+training loss: 0.6021164059638977 accuracy: 0.75
+test loss: 0.7593811750411987 accuracy: 0.75
+
+epoch: 93
+
+training loss: 0.5064799785614014 accuracy: 0.78125
+test loss: 2.1017398834228516 accuracy: 0.375
+
+epoch: 94
+
+training loss: 0.4606899917125702 accuracy: 0.78125
+test loss: 2.485403537750244 accuracy: 0.3125
+
+epoch: 95
+
+training loss: 1.0026452541351318 accuracy: 0.53125
+test loss: 0.8605799674987793 accuracy: 0.6875
+
+epoch: 96
+
+training loss: 0.7169291973114014 accuracy: 0.65625
+test loss: 1.1068757772445679 accuracy: 0.5625
+
+epoch: 97
+
+training loss: 0.723124623298645 accuracy: 0.6875
+test loss: 0.866447389125824 accuracy: 0.625
+
+epoch: 98
+
+training loss: 0.5323383808135986 accuracy: 0.75
+test loss: 1.8833032846450806 accuracy: 0.5
+
+epoch: 99
+
+training loss: 0.5588153600692749 accuracy: 0.71875
+test loss: 0.871109127998352 accuracy: 0.625
+
+epoch: 100
+
+training loss: 0.35247623920440674 accuracy: 0.84375
+test loss: 1.1294077634811401 accuracy: 0.625
+
+epoch: 101
+
+training loss: 0.5753636360168457 accuracy: 0.75
+test loss: 0.9076366424560547 accuracy: 0.75
+
+epoch: 102
+
+training loss: 0.43556517362594604 accuracy: 0.8125
+test loss: 1.2752779722213745 accuracy: 0.5625
+
+epoch: 103
+
+training loss: 0.4800384044647217 accuracy: 0.78125
+test loss: 0.8624359369277954 accuracy: 0.625
+
+epoch: 104
+
+training loss: 0.31717410683631897 accuracy: 0.84375
+test loss: 1.1221251487731934 accuracy: 0.625
+
+epoch: 105
+
+training loss: 0.6731455326080322 accuracy: 0.6875
+test loss: 0.7819334268569946 accuracy: 0.6875
+
+epoch: 106
+
+training loss: 0.38232192397117615 accuracy: 0.84375
+test loss: 0.7979941964149475 accuracy: 0.625
+
+epoch: 107
+
+training loss: 0.42043089866638184 accuracy: 0.8125
+test loss: 1.4855564832687378 accuracy: 0.5
+
+epoch: 108
+
+training loss: 0.39362484216690063 accuracy: 0.8125
+test loss: 0.6236760020256042 accuracy: 0.625
+
+epoch: 109
+
+training loss: 0.3227143883705139 accuracy: 0.84375
+test loss: 1.9532110691070557 accuracy: 0.375
+
+epoch: 110
+
+training loss: 0.21659085154533386 accuracy: 0.9375
+test loss: 0.8963561654090881 accuracy: 0.5625
+
+epoch: 111
+
+training loss: 0.4393072724342346 accuracy: 0.8125
+test loss: 0.4324180483818054 accuracy: 0.8125
+
+epoch: 112
+
+training loss: 0.4624361991882324 accuracy: 0.78125
+test loss: 0.7749767303466797 accuracy: 0.625
+
+epoch: 113
+
+training loss: 0.38693273067474365 accuracy: 0.8125
+test loss: 0.6873946785926819 accuracy: 0.625
+
+epoch: 114
+
+training loss: 0.3487032651901245 accuracy: 0.875
+test loss: 1.1160480976104736 accuracy: 0.375
+
+epoch: 115
+
+training loss: 0.5690560340881348 accuracy: 0.6875
+test loss: 0.5864392518997192 accuracy: 0.625
+
+epoch: 116
+
+training loss: 0.3797822594642639 accuracy: 0.78125
+test loss: 0.5646373629570007 accuracy: 0.5625
+
+epoch: 117
+
+training loss: 0.31103095412254333 accuracy: 0.84375
+test loss: 1.0621973276138306 accuracy: 0.375
+
+epoch: 118
+
+training loss: 0.22075609862804413 accuracy: 0.9375
+test loss: 0.8513314127922058 accuracy: 0.625
+
+epoch: 119
+
+training loss: 0.35254716873168945 accuracy: 0.90625
+test loss: 0.4439622759819031 accuracy: 0.75
+
+epoch: 120
+
+training loss: 0.4172026515007019 accuracy: 0.71875
+test loss: 0.7615625262260437 accuracy: 0.8125
+
+epoch: 121
+
+training loss: 0.5654752254486084 accuracy: 0.75
+test loss: 0.4875587224960327 accuracy: 0.625
+
+epoch: 122
+
+training loss: 0.2920239269733429 accuracy: 0.875
+test loss: 0.7521798014640808 accuracy: 0.5
+
+epoch: 123
+
+training loss: 0.23331038653850555 accuracy: 0.90625
+test loss: 1.0379760265350342 accuracy: 0.5
+
+epoch: 124
+
+training loss: 0.4175710380077362 accuracy: 0.75
+test loss: 1.4146533012390137 accuracy: 0.5
+
+epoch: 125
+
+training loss: 0.2467355877161026 accuracy: 0.875
+test loss: 0.519163191318512 accuracy: 0.875
+
+epoch: 126
+
+training loss: 0.3227299451828003 accuracy: 0.8125
+test loss: 0.7637222409248352 accuracy: 0.6875
+
+epoch: 127
+
+training loss: 0.23303642868995667 accuracy: 0.90625
+test loss: 0.9837039709091187 accuracy: 0.625
+
+epoch: 128
+
+training loss: 0.25266045331954956 accuracy: 0.8125
+test loss: 0.5916917324066162 accuracy: 0.6875
+
+epoch: 129
+
+training loss: 0.2602175772190094 accuracy: 0.9375
+test loss: 0.6197619438171387 accuracy: 0.875
+
+epoch: 130
+
+training loss: 0.3801746070384979 accuracy: 0.8125
+test loss: 0.9921759963035583 accuracy: 0.6875
+
+epoch: 131
+
+training loss: 0.3824998736381531 accuracy: 0.84375
+test loss: 0.8012990355491638 accuracy: 0.75
+
+epoch: 132
+
+training loss: 0.33362582325935364 accuracy: 0.84375
+test loss: 0.2963327169418335 accuracy: 0.875
+
+epoch: 133
+
+training loss: 0.4613867998123169 accuracy: 0.8125
+test loss: 1.148115873336792 accuracy: 0.375
+
+epoch: 134
+
+training loss: 0.46212583780288696 accuracy: 0.84375
+test loss: 0.7255532741546631 accuracy: 0.5625
+
+epoch: 135
+
+training loss: 0.2836625874042511 accuracy: 0.84375
+test loss: 1.0744786262512207 accuracy: 0.5625
+
+epoch: 136
+
+training loss: 0.41565072536468506 accuracy: 0.75
+test loss: 0.7657977342605591 accuracy: 0.5625
+
+epoch: 137
+
+training loss: 0.5692676305770874 accuracy: 0.53125
+test loss: 0.7473334074020386 accuracy: 0.75
+
+epoch: 138
+
+training loss: 0.5740492939949036 accuracy: 0.875
+test loss: 0.26461586356163025 accuracy: 0.8125
+
+epoch: 139
+
+training loss: 0.4073351323604584 accuracy: 0.78125
+test loss: 1.0903642177581787 accuracy: 0.625
+
+epoch: 140
+
+training loss: 0.5438376665115356 accuracy: 0.65625
+test loss: 0.7927535772323608 accuracy: 0.4375
+
+epoch: 141
+
+training loss: 0.35577380657196045 accuracy: 0.9375
+test loss: 0.6671863198280334 accuracy: 0.4375
+
+epoch: 142
+
+training loss: 0.3988247811794281 accuracy: 0.8125
+test loss: 0.8720724582672119 accuracy: 0.4375
+
+epoch: 143
+
+training loss: 0.286335289478302 accuracy: 0.90625
+test loss: 0.5761485695838928 accuracy: 0.625
+
+epoch: 144
+
+training loss: 0.4381355345249176 accuracy: 0.78125
+test loss: 0.6446101069450378 accuracy: 0.6875
+
+epoch: 145
+
+training loss: 0.4025720953941345 accuracy: 0.8125
+test loss: 0.999900758266449 accuracy: 0.25
+
+epoch: 146
+
+training loss: 0.3800230026245117 accuracy: 0.78125
+test loss: 0.6461875438690186 accuracy: 0.5625
+
+epoch: 147
+
+training loss: 0.32924413681030273 accuracy: 0.84375
+test loss: 0.6266987323760986 accuracy: 0.5
+
+epoch: 148
+
+training loss: 0.44031310081481934 accuracy: 0.75
+test loss: 0.6645197868347168 accuracy: 0.75
+
+epoch: 149
+
+training loss: 0.3772371709346771 accuracy: 0.875
+test loss: 0.8643159866333008 accuracy: 0.5625
+
+epoch: 150
+
+training loss: 0.32056695222854614 accuracy: 0.84375
+test loss: 1.1168817281723022 accuracy: 0.5625
+
+epoch: 151
+
+training loss: 0.3082420825958252 accuracy: 0.875
+test loss: 0.9015809893608093 accuracy: 0.375
+
+epoch: 152
+
+training loss: 0.3881572484970093 accuracy: 0.78125
+test loss: 1.1984562873840332 accuracy: 0.4375
+
+epoch: 153
+
+training loss: 0.28737586736679077 accuracy: 0.90625
+test loss: 1.0965490341186523 accuracy: 0.625
+
+epoch: 154
+
+training loss: 0.4039177894592285 accuracy: 0.8125
+test loss: 0.5631296634674072 accuracy: 0.75
+
+epoch: 155
+
+training loss: 0.3285190761089325 accuracy: 0.8125
+test loss: 0.4837929606437683 accuracy: 0.875
+
+epoch: 156
+
+training loss: 0.48770779371261597 accuracy: 0.6875
+test loss: 0.8127864003181458 accuracy: 0.6875
+
+epoch: 157
+
+training loss: 0.21731580793857574 accuracy: 0.90625
+test loss: 0.8801279664039612 accuracy: 0.6875
+
+epoch: 158
+
+training loss: 0.32506033778190613 accuracy: 0.875
+test loss: 1.2814171314239502 accuracy: 0.375
+
+epoch: 159
+
+training loss: 0.3102317750453949 accuracy: 0.8125
+test loss: 1.182584524154663 accuracy: 0.5625
+
+epoch: 160
+
+training loss: 0.3396655321121216 accuracy: 0.78125
+test loss: 1.8166170120239258 accuracy: 0.625
+
+epoch: 161
+
+training loss: 0.23045703768730164 accuracy: 0.875
+test loss: 1.7370936870574951 accuracy: 0.4375
+
+epoch: 162
+
+training loss: 0.49848073720932007 accuracy: 0.65625
+test loss: 0.6257221698760986 accuracy: 0.8125
+
+epoch: 163
+
+training loss: 0.23048803210258484 accuracy: 0.90625
+test loss: 0.9377883672714233 accuracy: 0.5625
+
+epoch: 164
+
+training loss: 0.32659459114074707 accuracy: 0.84375
+test loss: 0.933192253112793 accuracy: 0.6875
+
+epoch: 165
+
+training loss: 0.5385680794715881 accuracy: 0.84375
+test loss: 1.0637320280075073 accuracy: 0.75
+
+epoch: 166
+
+training loss: 0.5280178785324097 accuracy: 0.8125
+test loss: 0.5421112775802612 accuracy: 0.6875
+
+epoch: 167
+
+training loss: 0.3708595037460327 accuracy: 0.90625
+test loss: 0.6513084173202515 accuracy: 0.6875
+
+epoch: 168
+
+training loss: 0.39615559577941895 accuracy: 0.84375
+test loss: 1.0714048147201538 accuracy: 0.3125
+
+epoch: 169
+
+training loss: 0.30752021074295044 accuracy: 0.90625
+test loss: 0.6766794323921204 accuracy: 0.625
+
+epoch: 170
+
+training loss: 0.3129623532295227 accuracy: 0.84375
+test loss: 0.4520840346813202 accuracy: 0.75
+
+epoch: 171
+
+training loss: 0.37729179859161377 accuracy: 0.8125
+test loss: 0.5475250482559204 accuracy: 0.6875
+
+epoch: 172
+
+training loss: 0.3162936568260193 accuracy: 0.875
+test loss: 0.3825131356716156 accuracy: 0.6875
+
+epoch: 173
+
+training loss: 0.5198782682418823 accuracy: 0.78125
+test loss: 0.9367350339889526 accuracy: 0.625
+
+epoch: 174
+
+training loss: 0.31660860776901245 accuracy: 0.84375
+test loss: 0.538540244102478 accuracy: 0.4375
+
+epoch: 175
+
+training loss: 0.4330381751060486 accuracy: 0.71875
+test loss: 0.48873037099838257 accuracy: 0.75
+
+epoch: 176
+
+training loss: 0.2452598512172699 accuracy: 0.875
+test loss: 1.0296497344970703 accuracy: 0.5625
+
+epoch: 177
+
+training loss: 0.33667582273483276 accuracy: 0.875
+test loss: 0.9884047508239746 accuracy: 0.75
+
+epoch: 178
+
+training loss: 0.27560824155807495 accuracy: 0.90625
+test loss: 0.9606473445892334 accuracy: 0.6875
+
+epoch: 179
+
+training loss: 0.3426769971847534 accuracy: 0.75
+test loss: 0.258615642786026 accuracy: 0.75
+
+epoch: 180
+
+training loss: 0.34695130586624146 accuracy: 0.75
+test loss: 2.359560489654541 accuracy: 0.5
+
+epoch: 181
+
+training loss: 0.4485464096069336 accuracy: 0.78125
+test loss: 1.2391184568405151 accuracy: 0.6875
+
+epoch: 182
+
+training loss: 0.46899619698524475 accuracy: 0.78125
+test loss: 0.46003809571266174 accuracy: 0.8125
+
+epoch: 183
+
+training loss: 0.28128284215927124 accuracy: 0.875
+test loss: 1.3977636098861694 accuracy: 0.75
+
+epoch: 184
+
+training loss: 0.25683072209358215 accuracy: 0.875
+test loss: 1.4789574146270752 accuracy: 0.625
+
+epoch: 185
+
+training loss: 0.46923497319221497 accuracy: 0.78125
+test loss: 0.2545664310455322 accuracy: 0.9375
+
+epoch: 186
+
+training loss: 0.3125923275947571 accuracy: 0.8125
+test loss: 1.0830837488174438 accuracy: 0.4375
+
+epoch: 187
+
+training loss: 0.3781905770301819 accuracy: 0.8125
+test loss: 0.6281632781028748 accuracy: 0.875
+
+epoch: 188
+
+training loss: 0.4637294411659241 accuracy: 0.8125
+test loss: 1.36793851852417 accuracy: 0.25
+
+epoch: 189
+
+training loss: 0.8823263049125671 accuracy: 0.6875
+test loss: 0.8850811123847961 accuracy: 0.8125
+
+epoch: 190
+
+training loss: 0.6244125366210938 accuracy: 0.65625
+test loss: 0.6682195663452148 accuracy: 0.8125
+
+epoch: 191
+
+training loss: 0.40363651514053345 accuracy: 0.84375
+test loss: 1.627054214477539 accuracy: 0.625
+
+epoch: 192
+
+training loss: 0.31359371542930603 accuracy: 0.84375
+test loss: 0.9454069137573242 accuracy: 0.5
+
+epoch: 193
+
+training loss: 0.2675575315952301 accuracy: 0.875
+test loss: 0.6149780750274658 accuracy: 0.6875
+
+epoch: 194
+
+training loss: 0.35323187708854675 accuracy: 0.8125
+test loss: 0.7694863677024841 accuracy: 0.5625
+
+epoch: 195
+
+training loss: 0.3309474587440491 accuracy: 0.875
+test loss: 0.5695105791091919 accuracy: 0.6875
+
+epoch: 196
+
+training loss: 0.4074389338493347 accuracy: 0.78125
+test loss: 0.674609363079071 accuracy: 0.75
+
+epoch: 197
+
+training loss: 0.47445401549339294 accuracy: 0.75
+test loss: 0.331139475107193 accuracy: 0.8125
+
+epoch: 198
+
+training loss: 0.41605478525161743 accuracy: 0.78125
+test loss: 0.9325776100158691 accuracy: 0.4375
+
+epoch: 199
+
+training loss: 0.25439023971557617 accuracy: 0.875
+test loss: 0.8087891340255737 accuracy: 0.5
+
+epoch: 200
+
+training loss: 0.48722919821739197 accuracy: 0.71875
+test loss: 1.0016862154006958 accuracy: 0.375
+
+epoch: 201
+
+training loss: 0.34235137701034546 accuracy: 0.84375
+test loss: 1.044880986213684 accuracy: 0.5625
+
+epoch: 202
+
+training loss: 0.35014188289642334 accuracy: 0.90625
+test loss: 0.836658239364624 accuracy: 0.5
+
+epoch: 203
+
+training loss: 0.20765618979930878 accuracy: 0.9375
+test loss: 0.939697802066803 accuracy: 0.5625
+
+epoch: 204
+
+training loss: 0.2825172245502472 accuracy: 0.84375
+test loss: 0.5135969519615173 accuracy: 0.6875
+
+epoch: 205
+
+training loss: 0.34853029251098633 accuracy: 0.78125
+test loss: 0.9723630547523499 accuracy: 0.5
+
+epoch: 206
+
+training loss: 0.3300267457962036 accuracy: 0.875
+test loss: 0.8799099922180176 accuracy: 0.5
+
+epoch: 207
+
+training loss: 0.4489242434501648 accuracy: 0.84375
+test loss: 0.5843762159347534 accuracy: 0.6875
+
+epoch: 208
+
+training loss: 0.1906929612159729 accuracy: 0.875
+test loss: 1.103337049484253 accuracy: 0.5
+
+epoch: 209
+
+training loss: 0.376628577709198 accuracy: 0.84375
+test loss: 0.8831445574760437 accuracy: 0.6875
+
+epoch: 210
+
+training loss: 0.8609486818313599 accuracy: 0.625
+test loss: 2.3862438201904297 accuracy: 0.6875
+
+epoch: 211
+
+training loss: 0.7782536149024963 accuracy: 0.53125
+test loss: 0.43086564540863037 accuracy: 0.875
+
+epoch: 212
+
+training loss: 0.6025873422622681 accuracy: 0.6875
+test loss: 1.5443942546844482 accuracy: 0.5
+
+epoch: 213
+
+training loss: 0.6307705640792847 accuracy: 0.65625
+test loss: 0.6385533809661865 accuracy: 0.6875
+
+epoch: 214
+
+training loss: 0.6305074095726013 accuracy: 0.625
+test loss: 0.6525058746337891 accuracy: 0.875
+
+epoch: 215
+
+training loss: 0.6810449361801147 accuracy: 0.625
+test loss: 0.4708358645439148 accuracy: 0.6875
+
+epoch: 216
+
+training loss: 0.6948806047439575 accuracy: 0.625
+test loss: 1.096381425857544 accuracy: 0.6875
+
+epoch: 217
+
+training loss: 0.9487383365631104 accuracy: 0.5625
+test loss: 0.3635011911392212 accuracy: 0.875
+
+epoch: 218
+
+training loss: 0.48387885093688965 accuracy: 0.75
+test loss: 0.27600032091140747 accuracy: 0.9375
+
+epoch: 219
+
+training loss: 0.7240797281265259 accuracy: 0.65625
+test loss: 1.2584640979766846 accuracy: 0.625
+
+epoch: 220
+
+training loss: 0.6476577520370483 accuracy: 0.625
+test loss: 1.363335132598877 accuracy: 0.75
+
+epoch: 221
+
+training loss: 0.38736552000045776 accuracy: 0.84375
+test loss: 0.635076642036438 accuracy: 0.75
+
+epoch: 222
+
+training loss: 0.49424415826797485 accuracy: 0.6875
+test loss: 1.6579935550689697 accuracy: 0.625
+
+epoch: 223
+
+training loss: 0.4677213728427887 accuracy: 0.6875
+test loss: 0.600092887878418 accuracy: 0.8125
+
+epoch: 224
+
+training loss: 0.4178209900856018 accuracy: 0.71875
+test loss: 1.164414405822754 accuracy: 0.625
+
+epoch: 225
+
+training loss: 0.47521889209747314 accuracy: 0.625
+test loss: 2.843681573867798 accuracy: 0.5
+
+epoch: 226
+
+training loss: 0.18151269853115082 accuracy: 0.90625
+test loss: 0.3421548902988434 accuracy: 0.9375
+
+epoch: 227
+
+training loss: 0.34505414962768555 accuracy: 0.75
+test loss: 2.236030101776123 accuracy: 0.6875
+
+epoch: 228
+
+training loss: 0.4244489371776581 accuracy: 0.8125
+test loss: 2.501392364501953 accuracy: 0.6875
+
+epoch: 229
+
+training loss: 0.33312734961509705 accuracy: 0.78125
+test loss: 1.0207562446594238 accuracy: 0.8125
+
+epoch: 230
+
+training loss: 0.4122598469257355 accuracy: 0.75
+test loss: 1.4419925212860107 accuracy: 0.6875
+
+epoch: 231
+
+training loss: 0.6378424167633057 accuracy: 0.65625
+test loss: 1.7897703647613525 accuracy: 0.6875
+
+epoch: 232
+
+training loss: 0.2762809991836548 accuracy: 0.78125
+test loss: 0.9678897857666016 accuracy: 0.6875
+
+epoch: 233
+
+training loss: 0.5332952737808228 accuracy: 0.75
+test loss: 0.8388773798942566 accuracy: 0.6875
+
+epoch: 234
+
+training loss: 0.30335038900375366 accuracy: 0.8125
+test loss: 0.6534662246704102 accuracy: 0.75
+
+epoch: 235
+
+training loss: 0.4425491690635681 accuracy: 0.75
+test loss: 0.4783245027065277 accuracy: 0.875
+
+epoch: 236
+
+training loss: 0.44321224093437195 accuracy: 0.8125
+test loss: 0.5708928108215332 accuracy: 0.75
+
+epoch: 237
+
+training loss: 0.36542028188705444 accuracy: 0.84375
+test loss: 1.191472053527832 accuracy: 0.6875
+
+epoch: 238
+
+training loss: 0.3415488302707672 accuracy: 0.78125
+test loss: 1.1746306419372559 accuracy: 0.625
+
+epoch: 239
+
+training loss: 0.5564224720001221 accuracy: 0.75
+test loss: 1.062116026878357 accuracy: 0.4375
+
+epoch: 240
+
+training loss: 0.26097697019577026 accuracy: 0.875
+test loss: 0.5084440112113953 accuracy: 0.8125
+
+epoch: 241
+
+training loss: 0.46116071939468384 accuracy: 0.71875
+test loss: 1.1948426961898804 accuracy: 0.75
+
+epoch: 242
+
+training loss: 0.3152461647987366 accuracy: 0.875
+test loss: 1.0819671154022217 accuracy: 0.625
+
+epoch: 243
+
+training loss: 0.22251515090465546 accuracy: 0.90625
+test loss: 1.0868724584579468 accuracy: 0.6875
+
+epoch: 244
+
+training loss: 0.2650362253189087 accuracy: 0.875
+test loss: 1.6332345008850098 accuracy: 0.625
+
+epoch: 245
+
+training loss: 0.4156906008720398 accuracy: 0.75
+test loss: 1.1968371868133545 accuracy: 0.5625
+
+epoch: 246
+
+training loss: 0.30647629499435425 accuracy: 0.78125
+test loss: 0.32925257086753845 accuracy: 0.8125
+
+epoch: 247
+
+training loss: 0.3101302683353424 accuracy: 0.8125
+test loss: 1.4761968851089478 accuracy: 0.5
+
+epoch: 248
+
+training loss: 0.47008800506591797 accuracy: 0.75
+test loss: 2.064289093017578 accuracy: 0.625
+
+epoch: 249
+
+training loss: 0.23240917921066284 accuracy: 0.875
+test loss: 1.9303438663482666 accuracy: 0.6875
+
+epoch: 250
+
+training loss: 0.30725473165512085 accuracy: 0.84375
+test loss: 0.38884437084198 accuracy: 0.75
+
+epoch: 251
+
+training loss: 0.29978540539741516 accuracy: 0.8125
+test loss: 0.8990341424942017 accuracy: 0.8125
+
+epoch: 252
+
+training loss: 0.3507692813873291 accuracy: 0.875
+test loss: 1.6735072135925293 accuracy: 0.6875
+
+epoch: 253
+
+training loss: 0.2847417891025543 accuracy: 0.8125
+test loss: 0.9539667963981628 accuracy: 0.6875
+
+epoch: 254
+
+training loss: 0.48881542682647705 accuracy: 0.71875
+test loss: 0.6359559297561646 accuracy: 0.6875
+
+epoch: 255
+
+training loss: 0.4810614585876465 accuracy: 0.8125
+test loss: 0.2905304729938507 accuracy: 0.875
+
+epoch: 256
+
+training loss: 0.221546471118927 accuracy: 0.90625
+test loss: 1.4041221141815186 accuracy: 0.8125
+
+epoch: 257
+
+training loss: 0.4040423035621643 accuracy: 0.84375
+test loss: 0.4539080262184143 accuracy: 0.8125
+
+epoch: 258
+
+training loss: 0.29344746470451355 accuracy: 0.875
+test loss: 1.2923400402069092 accuracy: 0.8125
+
+epoch: 259
+
+training loss: 0.16288217902183533 accuracy: 0.96875
+test loss: 0.9022197127342224 accuracy: 0.625
+
+epoch: 260
+
+training loss: 0.2261083871126175 accuracy: 0.9375
+test loss: 1.0826870203018188 accuracy: 0.8125
+
+epoch: 261
+
+training loss: 0.2125340700149536 accuracy: 0.875
+test loss: 3.5042998790740967 accuracy: 0.5625
+
+epoch: 262
+
+training loss: 0.3036344349384308 accuracy: 0.875
+test loss: 0.26052045822143555 accuracy: 0.875
+
+epoch: 263
+
+training loss: 0.3222793936729431 accuracy: 0.71875
+test loss: 2.3326401710510254 accuracy: 0.625
+
+epoch: 264
+
+training loss: 0.6100587248802185 accuracy: 0.65625
+test loss: 1.277752161026001 accuracy: 0.6875
+
+epoch: 265
+
+training loss: 0.4677823781967163 accuracy: 0.71875
+test loss: 0.5954160690307617 accuracy: 0.75
+
+epoch: 266
+
+training loss: 0.37799596786499023 accuracy: 0.8125
+test loss: 0.7181064486503601 accuracy: 0.75
+
+epoch: 267
+
+training loss: 0.44349342584609985 accuracy: 0.71875
+test loss: 0.7198987007141113 accuracy: 0.5625
+
+epoch: 268
+
+training loss: 0.5406118631362915 accuracy: 0.65625
+test loss: 0.992412805557251 accuracy: 0.625
+
+epoch: 269
+
+training loss: 0.38102027773857117 accuracy: 0.875
+test loss: 0.4688020944595337 accuracy: 0.75
+
+epoch: 270
+
+training loss: 0.38900226354599 accuracy: 0.71875
+test loss: 0.5732386112213135 accuracy: 0.8125
+
+epoch: 271
+
+training loss: 0.4223385155200958 accuracy: 0.6875
+test loss: 1.428502082824707 accuracy: 0.5
+
+epoch: 272
+
+training loss: 0.41668540239334106 accuracy: 0.6875
+test loss: 0.5246912837028503 accuracy: 0.8125
+
+epoch: 273
+
+training loss: 0.43113580346107483 accuracy: 0.71875
+test loss: 1.131845235824585 accuracy: 0.75
+
+epoch: 274
+
+training loss: 0.2854233980178833 accuracy: 0.78125
+test loss: 0.2699093222618103 accuracy: 1.0
+
+epoch: 275
+
+training loss: 0.6210205554962158 accuracy: 0.65625
+test loss: 0.5413100719451904 accuracy: 0.75
+
+epoch: 276
+
+training loss: 0.4678960144519806 accuracy: 0.6875
+test loss: 1.3764528036117554 accuracy: 0.6875
+
+epoch: 277
+
+training loss: 0.43521177768707275 accuracy: 0.75
+test loss: 0.433428019285202 accuracy: 0.8125
+
+epoch: 278
+
+training loss: 0.3624322712421417 accuracy: 0.75
+test loss: 0.5144102573394775 accuracy: 0.75
+
+epoch: 279
+
+training loss: 0.46869930624961853 accuracy: 0.65625
+test loss: 0.7937711477279663 accuracy: 0.8125
+
+epoch: 280
+
+training loss: 0.48745715618133545 accuracy: 0.6875
+test loss: 0.8285832405090332 accuracy: 0.8125
+
+epoch: 281
+
+training loss: 0.3782311975955963 accuracy: 0.71875
+test loss: 0.8101985454559326 accuracy: 0.6875
+
+epoch: 282
+
+training loss: 0.3271382451057434 accuracy: 0.78125
+test loss: 0.9534663558006287 accuracy: 0.6875
+
+epoch: 283
+
+training loss: 0.5511335730552673 accuracy: 0.625
+test loss: 0.9867061376571655 accuracy: 0.6875
+
+epoch: 284
+
+training loss: 0.35246795415878296 accuracy: 0.75
+test loss: 1.8403478860855103 accuracy: 0.75
+
+epoch: 285
+
+training loss: 0.46429020166397095 accuracy: 0.625
+test loss: 0.47059059143066406 accuracy: 0.875
+
+epoch: 286
+
+training loss: 0.39394107460975647 accuracy: 0.53125
+test loss: 1.8052985668182373 accuracy: 0.75
+
+epoch: 287
+
+training loss: 0.3788983225822449 accuracy: 0.59375
+test loss: 0.8232899308204651 accuracy: 0.625
+
+epoch: 288
+
+training loss: 0.28965508937835693 accuracy: 0.875
+test loss: 0.3973582088947296 accuracy: 0.6875
+
+epoch: 289
+
+training loss: 0.4092089831829071 accuracy: 0.78125
+test loss: 0.8959311842918396 accuracy: 0.6875
+
+epoch: 290
+
+training loss: 0.5461629629135132 accuracy: 0.6875
+test loss: 0.7138708829879761 accuracy: 0.6875
+
+epoch: 291
+
+training loss: 0.2336653172969818 accuracy: 0.84375
+test loss: 3.0268354415893555 accuracy: 0.5
+
+epoch: 292
+
+training loss: 0.22745957970619202 accuracy: 0.875
+test loss: 3.4185667037963867 accuracy: 0.5625
+
+epoch: 293
+
+training loss: 0.5376615524291992 accuracy: 0.71875
+test loss: 2.013746500015259 accuracy: 0.75
+
+epoch: 294
+
+training loss: 0.3727847933769226 accuracy: 0.90625
+test loss: 0.6829730272293091 accuracy: 0.6875
+
+epoch: 295
+
+training loss: 0.15224803984165192 accuracy: 0.90625
+test loss: 1.5115553140640259 accuracy: 0.5625
+
+epoch: 296
+
+training loss: 0.2589712142944336 accuracy: 0.875
+test loss: 1.849861741065979 accuracy: 0.5625
+
+epoch: 297
+
+training loss: 0.4380183815956116 accuracy: 0.78125
+test loss: 1.5586655139923096 accuracy: 0.6875
+
+epoch: 298
+
+training loss: 0.22297413647174835 accuracy: 0.9375
+test loss: 0.19356819987297058 accuracy: 0.875
+
+epoch: 299
+
+training loss: 0.6525671482086182 accuracy: 0.71875
+test loss: 1.156106948852539 accuracy: 0.5625
+
+epoch: 300
+
+training loss: 0.7654858827590942 accuracy: 0.71875
+test loss: 0.9709351658821106 accuracy: 0.6875
+
+epoch: 301
+
+training loss: 0.6765651702880859 accuracy: 0.75
+test loss: 2.8148646354675293 accuracy: 0.3125
+
+epoch: 302
+
+training loss: 0.7801069021224976 accuracy: 0.65625
+test loss: 1.0969961881637573 accuracy: 0.5625
+
+epoch: 303
+
+training loss: 0.9240368604660034 accuracy: 0.6875
+test loss: 1.7208807468414307 accuracy: 0.6875
+
+epoch: 304
+
+training loss: 0.8078618049621582 accuracy: 0.75
+test loss: 1.610015869140625 accuracy: 0.5625
+
+epoch: 305
+
+training loss: 0.8388580083847046 accuracy: 0.65625
+test loss: 1.5178841352462769 accuracy: 0.625
+
+epoch: 306
+
+training loss: 0.5864314436912537 accuracy: 0.78125
+test loss: 1.0881879329681396 accuracy: 0.625
+
+epoch: 307
+
+training loss: 0.7417914271354675 accuracy: 0.6875
+test loss: 1.1994717121124268 accuracy: 0.625
+
+epoch: 308
+
+training loss: 0.4262404441833496 accuracy: 0.875
+test loss: 2.117849111557007 accuracy: 0.375
+
+epoch: 309
+
+training loss: 0.5835978388786316 accuracy: 0.8125
+test loss: 0.8685150146484375 accuracy: 0.75
+
+epoch: 310
+
+training loss: 0.5081138610839844 accuracy: 0.8125
+test loss: 1.0540618896484375 accuracy: 0.4375
+
+epoch: 311
+
+training loss: 0.6175149083137512 accuracy: 0.75
+test loss: 1.2272074222564697 accuracy: 0.5
+
+epoch: 312
+
+training loss: 0.5263749957084656 accuracy: 0.8125
+test loss: 1.2385871410369873 accuracy: 0.5
+
+epoch: 313
+
+training loss: 0.519939124584198 accuracy: 0.84375
+test loss: 1.374748706817627 accuracy: 0.4375
+
+epoch: 314
+
+training loss: 0.4592549800872803 accuracy: 0.71875
+test loss: 1.1270737648010254 accuracy: 0.625
+
+epoch: 315
+
+training loss: 0.5902211666107178 accuracy: 0.75
+test loss: 0.5720576047897339 accuracy: 0.75
+
+epoch: 316
+
+training loss: 0.426180362701416 accuracy: 0.84375
+test loss: 1.3226521015167236 accuracy: 0.5
+
+epoch: 317
+
+training loss: 0.44316697120666504 accuracy: 0.8125
+test loss: 1.6672147512435913 accuracy: 0.5625
+
+epoch: 318
+
+training loss: 0.2869967520236969 accuracy: 0.875
+test loss: 1.3824436664581299 accuracy: 0.5
+
+epoch: 319
+
+training loss: 0.37367790937423706 accuracy: 0.84375
+test loss: 1.0919266939163208 accuracy: 0.6875
+
+epoch: 320
+
+training loss: 0.2971467673778534 accuracy: 0.84375
+test loss: 0.5525367259979248 accuracy: 0.6875
+
+epoch: 321
+
+training loss: 0.20419298112392426 accuracy: 0.90625
+test loss: 0.6558645367622375 accuracy: 0.6875
+
+epoch: 322
+
+training loss: 0.3621985912322998 accuracy: 0.84375
+test loss: 1.0441584587097168 accuracy: 0.5
+
+epoch: 323
+
+training loss: 0.20090562105178833 accuracy: 0.90625
+test loss: 0.5666942596435547 accuracy: 0.75
+
+epoch: 324
+
+training loss: 0.43284696340560913 accuracy: 0.8125
+test loss: 0.5891160368919373 accuracy: 0.8125
+
+epoch: 325
+
+training loss: 0.32333362102508545 accuracy: 0.875
+test loss: 0.6590554714202881 accuracy: 0.8125
+
+epoch: 326
+
+training loss: 0.3700462579727173 accuracy: 0.875
+test loss: 2.004164934158325 accuracy: 0.625
+
+epoch: 327
+
+training loss: 0.4552970230579376 accuracy: 0.78125
+test loss: 2.0635180473327637 accuracy: 0.5
+
+epoch: 328
+
+training loss: 0.27987200021743774 accuracy: 0.875
+test loss: 0.8887639045715332 accuracy: 0.6875
+
+epoch: 329
+
+training loss: 0.37480446696281433 accuracy: 0.78125
+test loss: 0.6767637729644775 accuracy: 0.625
+
+epoch: 330
+
+training loss: 0.2970268130302429 accuracy: 0.875
+test loss: 1.3428791761398315 accuracy: 0.5625
+
+epoch: 331
+
+training loss: 0.24485382437705994 accuracy: 0.875
+test loss: 2.0447535514831543 accuracy: 0.4375
+
+epoch: 332
+
+training loss: 0.5028069019317627 accuracy: 0.71875
+test loss: 1.1100069284439087 accuracy: 0.6875
+
+epoch: 333
+
+training loss: 0.3834109306335449 accuracy: 0.8125
+test loss: 1.9866793155670166 accuracy: 0.625
+
+epoch: 334
+
+training loss: 0.2416427582502365 accuracy: 0.90625
+test loss: 1.5387194156646729 accuracy: 0.4375
+
+epoch: 335
+
+training loss: 0.33813682198524475 accuracy: 0.84375
+test loss: 0.8358398675918579 accuracy: 0.625
+
+epoch: 336
+
+training loss: 0.35509318113327026 accuracy: 0.84375
+test loss: 0.7841879725456238 accuracy: 0.6875
+
+epoch: 337
+
+training loss: 0.22032591700553894 accuracy: 0.90625
+test loss: 2.1490345001220703 accuracy: 0.6875
+
+epoch: 338
+
+training loss: 0.26640209555625916 accuracy: 0.84375
+test loss: 2.197253704071045 accuracy: 0.5
+
+epoch: 339
+
+training loss: 0.1890072375535965 accuracy: 0.9375
+test loss: 1.6296894550323486 accuracy: 0.75
+
+epoch: 340
+
+training loss: 0.1353873312473297 accuracy: 0.90625
+test loss: 1.5694539546966553 accuracy: 0.625
+
+epoch: 341
+
+training loss: 0.2830578684806824 accuracy: 0.78125
+test loss: 1.6685750484466553 accuracy: 0.5625
+
+epoch: 342
+
+training loss: 0.247218057513237 accuracy: 0.9375
+test loss: 1.3014686107635498 accuracy: 0.5625
+
+epoch: 343
+
+training loss: 1.2014573812484741 accuracy: 0.625
+test loss: 1.0184688568115234 accuracy: 0.75
+
+epoch: 344
+
+training loss: 0.44447600841522217 accuracy: 0.78125
+test loss: 0.7940537929534912 accuracy: 0.625
+
+epoch: 345
+
+training loss: 0.47073864936828613 accuracy: 0.6875
+test loss: 0.6199967861175537 accuracy: 0.75
+
+epoch: 346
+
+training loss: 0.40450531244277954 accuracy: 0.8125
+test loss: 0.7609689235687256 accuracy: 0.5625
+
+epoch: 347
+
+training loss: 0.277718186378479 accuracy: 0.875
+test loss: 0.5283365845680237 accuracy: 0.75
+
+epoch: 348
+
+training loss: 0.3704979121685028 accuracy: 0.71875
+test loss: 0.7132284641265869 accuracy: 0.6875
+
+epoch: 349
+
+training loss: 0.2843966782093048 accuracy: 0.8125
+test loss: 1.198182463645935 accuracy: 0.625
+
+epoch: 350
+
+training loss: 0.31171008944511414 accuracy: 0.8125
+test loss: 0.26675236225128174 accuracy: 0.9375
+
+epoch: 351
+
+training loss: 0.371488481760025 accuracy: 0.78125
+test loss: 0.6552743315696716 accuracy: 0.8125
+
+epoch: 352
+
+training loss: 0.504950761795044 accuracy: 0.71875
+test loss: 1.0259279012680054 accuracy: 0.75
+
+epoch: 353
+
+training loss: 0.5202118158340454 accuracy: 0.59375
+test loss: 0.1695171743631363 accuracy: 0.875
+
+epoch: 354
+
+training loss: 0.3608214259147644 accuracy: 0.78125
+test loss: 1.6465017795562744 accuracy: 0.375
+
+epoch: 355
+
+training loss: 0.49310916662216187 accuracy: 0.71875
+test loss: 2.134502410888672 accuracy: 0.5625
+
+epoch: 356
+
+training loss: 0.31660303473472595 accuracy: 0.8125
+test loss: 0.14138706028461456 accuracy: 1.0
+
+epoch: 357
+
+training loss: 0.4030807316303253 accuracy: 0.875
+test loss: 0.7791630029678345 accuracy: 0.5
+
+epoch: 358
+
+training loss: 0.3848406672477722 accuracy: 0.75
+test loss: 0.523169994354248 accuracy: 0.5
+
+epoch: 359
+
+training loss: 0.48438572883605957 accuracy: 0.6875
+test loss: 1.2917851209640503 accuracy: 0.8125
+
+epoch: 360
+
+training loss: 0.3266626000404358 accuracy: 0.875
+test loss: 2.527733325958252 accuracy: 0.5625
+
+epoch: 361
+
+training loss: 0.45101070404052734 accuracy: 0.8125
+test loss: 1.2770261764526367 accuracy: 0.6875
+
+epoch: 362
+
+training loss: 0.16352078318595886 accuracy: 0.90625
+test loss: 0.7193621397018433 accuracy: 0.4375
+
+epoch: 363
+
+training loss: 0.37169620394706726 accuracy: 0.8125
+test loss: 1.18295156955719 accuracy: 0.375
+
+epoch: 364
+
+training loss: 0.6085270047187805 accuracy: 0.65625
+test loss: 1.5798261165618896 accuracy: 0.375
+
+epoch: 365
+
+training loss: 0.5312497615814209 accuracy: 0.75
+test loss: 0.26270875334739685 accuracy: 0.8125
+
+epoch: 366
+
+training loss: 0.3795250654220581 accuracy: 0.8125
+test loss: 0.7721091508865356 accuracy: 0.6875
+
+epoch: 367
+
+training loss: 0.3166382312774658 accuracy: 0.90625
+test loss: 0.5424631834030151 accuracy: 0.75
+
+epoch: 368
+
+training loss: 0.18443837761878967 accuracy: 0.9375
+test loss: 1.0208345651626587 accuracy: 0.5
+
+epoch: 369
+
+training loss: 0.22683185338974 accuracy: 0.90625
+test loss: 1.2795735597610474 accuracy: 0.5
+
+epoch: 370
+
+training loss: 0.2596665620803833 accuracy: 0.875
+test loss: 1.1395169496536255 accuracy: 0.5625
+
+epoch: 371
+
+training loss: 0.23812855780124664 accuracy: 0.84375
+test loss: 1.4266715049743652 accuracy: 0.75
+
+epoch: 372
+
+training loss: 0.3327394723892212 accuracy: 0.90625
+test loss: 1.1465928554534912 accuracy: 0.8125
+
+epoch: 373
+
+training loss: 0.2619161605834961 accuracy: 0.84375
+test loss: 0.8872450590133667 accuracy: 0.625
+
+epoch: 374
+
+training loss: 0.2642779052257538 accuracy: 0.8125
+test loss: 0.7780954837799072 accuracy: 0.625
+
+epoch: 375
+
+training loss: 0.3762945532798767 accuracy: 0.90625
+test loss: 2.156219959259033 accuracy: 0.5
+
+epoch: 376
+
+training loss: 0.25285494327545166 accuracy: 0.875
+test loss: 0.981980562210083 accuracy: 0.75
+
+epoch: 377
+
+training loss: 0.3888487219810486 accuracy: 0.8125
+test loss: 0.44207823276519775 accuracy: 0.9375
+
+epoch: 378
+
+training loss: 0.21596211194992065 accuracy: 0.90625
+test loss: 0.3465835154056549 accuracy: 0.9375
+
+epoch: 379
+
+training loss: 0.2955588698387146 accuracy: 0.875
+test loss: 1.2286157608032227 accuracy: 0.6875
+
+epoch: 380
+
+training loss: 1.0169605016708374 accuracy: 0.75
+test loss: 1.9574627876281738 accuracy: 0.5625
+
+epoch: 381
+
+training loss: 1.0887787342071533 accuracy: 0.625
+test loss: 1.2773905992507935 accuracy: 0.5625
+
+epoch: 382
+
+training loss: 2.1118335723876953 accuracy: 0.40625
+test loss: 3.3425254821777344 accuracy: 0.375
+
+epoch: 383
+
+training loss: 1.55531907081604 accuracy: 0.5625
+test loss: 2.7968671321868896 accuracy: 0.4375
+
+epoch: 384
+
+training loss: 1.3512474298477173 accuracy: 0.65625
+test loss: 2.320452928543091 accuracy: 0.4375
+
+epoch: 385
+
+training loss: 1.471508264541626 accuracy: 0.625
+test loss: 2.0331592559814453 accuracy: 0.5625
+
+epoch: 386
+
+training loss: 1.216500997543335 accuracy: 0.53125
+test loss: 1.6205599308013916 accuracy: 0.5625
+
+epoch: 387
+
+training loss: 1.0496132373809814 accuracy: 0.59375
+test loss: 1.800816297531128 accuracy: 0.5
+
+epoch: 388
+
+training loss: 0.9612342715263367 accuracy: 0.59375
+test loss: 1.6937768459320068 accuracy: 0.4375
+
+epoch: 389
+
+training loss: 0.7663495540618896 accuracy: 0.71875
+test loss: 1.446531891822815 accuracy: 0.5
+
+epoch: 390
+
+training loss: 0.7874635457992554 accuracy: 0.625
+test loss: 1.2033240795135498 accuracy: 0.5625
+
+epoch: 391
+
+training loss: 0.44800645112991333 accuracy: 0.84375
+test loss: 1.1843688488006592 accuracy: 0.6875
+
+epoch: 392
+
+training loss: 0.9925345182418823 accuracy: 0.5625
+test loss: 1.0931377410888672 accuracy: 0.4375
+
+epoch: 393
+
+training loss: 0.6445589661598206 accuracy: 0.71875
+test loss: 1.2125771045684814 accuracy: 0.5625
+
+epoch: 394
+
+training loss: 0.430995911359787 accuracy: 0.84375
+test loss: 2.3302929401397705 accuracy: 0.375
+
+epoch: 395
+
+training loss: 0.5257993936538696 accuracy: 0.71875
+test loss: 2.5098953247070312 accuracy: 0.25
+
+epoch: 396
+
+training loss: 0.535660982131958 accuracy: 0.78125
+test loss: 0.870352029800415 accuracy: 0.5625
+
+epoch: 397
+
+training loss: 0.6442068815231323 accuracy: 0.6875
+test loss: 1.0977792739868164 accuracy: 0.5
+
+epoch: 398
+
+training loss: 0.5247371196746826 accuracy: 0.78125
+test loss: 0.7948755025863647 accuracy: 0.5625
+
+epoch: 399
+
+training loss: 0.45708876848220825 accuracy: 0.8125
+test loss: 0.7752929925918579 accuracy: 0.5
+
+epoch: 400
+
+training loss: 0.554369330406189 accuracy: 0.65625
+test loss: 0.5890855193138123 accuracy: 0.5625
+
+epoch: 401
+
+training loss: 0.4471622407436371 accuracy: 0.8125
+test loss: 1.009965181350708 accuracy: 0.5625
+
+epoch: 402
+
+training loss: 0.6382166147232056 accuracy: 0.625
+test loss: 0.7578429579734802 accuracy: 0.5
+
+epoch: 403
+
+training loss: 0.5159794092178345 accuracy: 0.71875
+test loss: 0.691997766494751 accuracy: 0.5625
+
+epoch: 404
+
+training loss: 0.46628791093826294 accuracy: 0.75
+test loss: 0.6604958176612854 accuracy: 0.5625
+
+epoch: 405
+
+training loss: 0.2850230634212494 accuracy: 0.90625
+test loss: 0.6778578758239746 accuracy: 0.5625
+
+epoch: 406
+
+training loss: 0.31819164752960205 accuracy: 0.875
+test loss: 1.3379302024841309 accuracy: 0.3125
+
+epoch: 407
+
+training loss: 0.6359030604362488 accuracy: 0.59375
+test loss: 1.3573721647262573 accuracy: 0.375
+
+epoch: 408
+
+training loss: 0.41760748624801636 accuracy: 0.75
+test loss: 0.5424764156341553 accuracy: 0.5625
+
+epoch: 409
+
+training loss: 0.42477476596832275 accuracy: 0.78125
+test loss: 0.8160368204116821 accuracy: 0.5625
+
+epoch: 410
+
+training loss: 0.3018507957458496 accuracy: 0.84375
+test loss: 0.9251108169555664 accuracy: 0.4375
+
+epoch: 411
+
+training loss: 0.30317267775535583 accuracy: 0.875
+test loss: 1.7142707109451294 accuracy: 0.375
+
+epoch: 412
+
+training loss: 0.390014111995697 accuracy: 0.8125
+test loss: 0.9815415143966675 accuracy: 0.5
+
+epoch: 413
+
+training loss: 0.261496901512146 accuracy: 0.9375
+test loss: 0.909159779548645 accuracy: 0.6875
+
+epoch: 414
+
+training loss: 0.3642798960208893 accuracy: 0.8125
+test loss: 0.35081636905670166 accuracy: 0.75
+
+epoch: 415
+
+training loss: 0.6569961309432983 accuracy: 0.625
+test loss: 0.5766879916191101 accuracy: 0.625
+
+epoch: 416
+
+training loss: 0.5800408720970154 accuracy: 0.75
+test loss: 0.5885912179946899 accuracy: 0.4375
+
+epoch: 417
+
+training loss: 0.4225810766220093 accuracy: 0.75
+test loss: 0.6688239574432373 accuracy: 0.4375
+
+epoch: 418
+
+training loss: 0.4993794560432434 accuracy: 0.75
+test loss: 0.9444032907485962 accuracy: 0.5625
+
+epoch: 419
+
+training loss: 0.4504361152648926 accuracy: 0.8125
+test loss: 0.5457876920700073 accuracy: 0.8125
+
+epoch: 420
+
+training loss: 0.4762609601020813 accuracy: 0.6875
+test loss: 0.9038928151130676 accuracy: 0.5625
+
+epoch: 421
+
+training loss: 0.42115944623947144 accuracy: 0.6875
+test loss: 1.3314578533172607 accuracy: 0.5625
+
+epoch: 422
+
+training loss: 0.41292649507522583 accuracy: 0.71875
+test loss: 0.7163794040679932 accuracy: 0.75
+
+epoch: 423
+
+training loss: 0.5014210939407349 accuracy: 0.5
+test loss: 0.4357035756111145 accuracy: 0.8125
+
+epoch: 424
+
+training loss: 0.5297689437866211 accuracy: 0.78125
+test loss: 0.6465362310409546 accuracy: 0.6875
+
+epoch: 425
+
+training loss: 0.3174619674682617 accuracy: 0.90625
+test loss: 0.9041385650634766 accuracy: 0.6875
+
+epoch: 426
+
+training loss: 0.3819926977157593 accuracy: 0.875
+test loss: 0.6462339162826538 accuracy: 0.75
+
+epoch: 427
+
+training loss: 0.32335907220840454 accuracy: 0.84375
+test loss: 1.3787579536437988 accuracy: 0.375
+
+epoch: 428
+
+training loss: 0.38408854603767395 accuracy: 0.65625
+test loss: 0.8532556295394897 accuracy: 0.75
+
+epoch: 429
+
+training loss: 0.44970834255218506 accuracy: 0.71875
+test loss: 0.9644707441329956 accuracy: 0.6875
+
+epoch: 430
+
+training loss: 0.28689295053482056 accuracy: 0.9375
+test loss: 1.2327141761779785 accuracy: 0.625
+
+epoch: 431
+
+training loss: 0.49898070096969604 accuracy: 0.625
+test loss: 1.2316656112670898 accuracy: 0.6875
+
+epoch: 432
+
+training loss: 0.3734506368637085 accuracy: 0.875
+test loss: 1.221100091934204 accuracy: 0.625
+
+epoch: 433
+
+training loss: 0.32015782594680786 accuracy: 0.9375
+test loss: 1.283261775970459 accuracy: 0.5625
+
+epoch: 434
+
+training loss: 0.2710999548435211 accuracy: 0.875
+test loss: 1.0695769786834717 accuracy: 0.5625
+
+epoch: 435
+
+training loss: 0.29573342204093933 accuracy: 0.84375
+test loss: 0.7666088342666626 accuracy: 0.75
+
+epoch: 436
+
+training loss: 0.39501649141311646 accuracy: 0.75
+test loss: 1.2076480388641357 accuracy: 0.6875
+
+epoch: 437
+
+training loss: 0.42273879051208496 accuracy: 0.65625
+test loss: 0.463189959526062 accuracy: 0.8125
+
+epoch: 438
+
+training loss: 0.25463467836380005 accuracy: 0.8125
+test loss: 1.081936240196228 accuracy: 0.8125
+
+epoch: 439
+
+training loss: 0.40677931904792786 accuracy: 0.8125
+test loss: 3.154344081878662 accuracy: 0.4375
+
+epoch: 440
+
+training loss: 0.4080854058265686 accuracy: 0.65625
+test loss: 2.0360827445983887 accuracy: 0.5625
+
+epoch: 441
+
+training loss: 0.3783072531223297 accuracy: 0.6875
+test loss: 1.5625189542770386 accuracy: 0.8125
+
+epoch: 442
+
+training loss: 0.43910449743270874 accuracy: 0.625
+test loss: 1.2037932872772217 accuracy: 0.6875
+
+epoch: 443
+
+training loss: 0.4226853847503662 accuracy: 0.625
+test loss: 1.7159367799758911 accuracy: 0.6875
+
+epoch: 444
+
+training loss: 0.2809935212135315 accuracy: 0.8125
+test loss: 1.0675482749938965 accuracy: 0.6875
+
+epoch: 445
+
+training loss: 0.6105523109436035 accuracy: 0.5625
+test loss: 1.5407688617706299 accuracy: 0.5
+
+epoch: 446
+
+training loss: 0.3700200021266937 accuracy: 0.65625
+test loss: 2.2404050827026367 accuracy: 0.6875
+
+epoch: 447
+
+training loss: 0.4709095060825348 accuracy: 0.65625
+test loss: 1.9975881576538086 accuracy: 0.75
+
+epoch: 448
+
+training loss: 0.21370767056941986 accuracy: 0.84375
+test loss: 0.9366432428359985 accuracy: 0.875
+
+epoch: 449
+
+training loss: 0.4802933633327484 accuracy: 0.65625
+test loss: 1.0840333700180054 accuracy: 0.8125
+
+epoch: 450
+
+training loss: 0.27869901061058044 accuracy: 0.75
+test loss: 0.3501605689525604 accuracy: 0.8125
+
+epoch: 451
+
+training loss: 0.3217209577560425 accuracy: 0.71875
+test loss: 3.658813238143921 accuracy: 0.375
+
+epoch: 452
+
+training loss: 0.4372689723968506 accuracy: 0.71875
+test loss: 1.5376026630401611 accuracy: 0.6875
+
+epoch: 453
+
+training loss: 0.3694169521331787 accuracy: 0.78125
+test loss: 1.9582912921905518 accuracy: 0.625
+
+epoch: 454
+
+training loss: 0.17516273260116577 accuracy: 0.84375
+test loss: 3.0087332725524902 accuracy: 0.4375
+
+epoch: 455
+
+training loss: 0.2525634169578552 accuracy: 0.78125
+test loss: 1.3067653179168701 accuracy: 0.625
+
+epoch: 456
+
+training loss: 0.33986490964889526 accuracy: 0.6875
+test loss: 0.656402587890625 accuracy: 0.6875
+
+epoch: 457
+
+training loss: 0.23783399164676666 accuracy: 0.8125
+test loss: 2.9631166458129883 accuracy: 0.625
+
+epoch: 458
+
+training loss: 0.30842241644859314 accuracy: 0.84375
+test loss: 2.180222511291504 accuracy: 0.5625
+
+epoch: 459
+
+training loss: 0.09608261287212372 accuracy: 0.9375
+test loss: 2.2379937171936035 accuracy: 0.6875
+
+epoch: 460
+
+training loss: 0.5862531661987305 accuracy: 0.59375
+test loss: 1.6824346780776978 accuracy: 0.6875
+
+epoch: 461
+
+training loss: 0.4059578776359558 accuracy: 0.6875
+test loss: 1.5663326978683472 accuracy: 0.6875
+
+epoch: 462
+
+training loss: 0.2755328416824341 accuracy: 0.75
+test loss: 2.198903799057007 accuracy: 0.8125
+
+epoch: 463
+
+training loss: 0.5120125412940979 accuracy: 0.65625
+test loss: 2.2979869842529297 accuracy: 0.625
+
+epoch: 464
+
+training loss: 0.35565465688705444 accuracy: 0.8125
+test loss: 0.399013876914978 accuracy: 0.8125
+
+epoch: 465
+
+training loss: 0.42774054408073425 accuracy: 0.875
+test loss: 1.2176374197006226 accuracy: 0.6875
+
+epoch: 466
+
+training loss: 0.38327038288116455 accuracy: 0.84375
+test loss: 1.8412859439849854 accuracy: 0.4375
+
+epoch: 467
+
+training loss: 0.3339473009109497 accuracy: 0.75
+test loss: 1.1364796161651611 accuracy: 0.875
+
+epoch: 468
+
+training loss: 0.26577064394950867 accuracy: 0.875
+test loss: 0.9321458339691162 accuracy: 0.75
+
+epoch: 469
+
+training loss: 0.2011081576347351 accuracy: 0.84375
+test loss: 2.069310188293457 accuracy: 0.8125
+
+epoch: 470
+
+training loss: 0.49898916482925415 accuracy: 0.8125
+test loss: 0.850275456905365 accuracy: 0.75
+
+epoch: 471
+
+training loss: 0.24845492839813232 accuracy: 0.875
+test loss: 1.2355071306228638 accuracy: 0.8125
+
+epoch: 472
+
+training loss: 0.21904873847961426 accuracy: 0.9375
+test loss: 0.3853277266025543 accuracy: 0.8125
+
+epoch: 473
+
+training loss: 0.5242084860801697 accuracy: 0.71875
+test loss: 1.2182352542877197 accuracy: 0.75
+
+epoch: 474
+
+training loss: 0.35389095544815063 accuracy: 0.6875
+test loss: 1.62814462184906 accuracy: 0.625
+
+epoch: 475
+
+training loss: 0.41329023241996765 accuracy: 0.8125
+test loss: 1.255022406578064 accuracy: 0.5625
+
+epoch: 476
+
+training loss: 0.42130914330482483 accuracy: 0.75
+test loss: 0.32714736461639404 accuracy: 0.9375
+
+epoch: 477
+
+training loss: 0.3342064321041107 accuracy: 0.90625
+test loss: 1.9628323316574097 accuracy: 0.6875
+
+epoch: 478
+
+training loss: 0.3508446216583252 accuracy: 0.78125
+test loss: 0.9106975197792053 accuracy: 0.75
+
+epoch: 479
+
+training loss: 0.2975441813468933 accuracy: 0.75
+test loss: 1.3177704811096191 accuracy: 0.8125
+
+epoch: 480
+
+training loss: 0.40722379088401794 accuracy: 0.84375
+test loss: 1.8142696619033813 accuracy: 0.6875
+
+epoch: 481
+
+training loss: 0.3950081467628479 accuracy: 0.6875
+test loss: 3.895020008087158 accuracy: 0.4375
+
+epoch: 482
+
+training loss: 0.36477071046829224 accuracy: 0.8125
+test loss: 1.5410656929016113 accuracy: 0.8125
+
+epoch: 483
+
+training loss: 0.2967715859413147 accuracy: 0.84375
+test loss: 0.742611825466156 accuracy: 0.75
+
+epoch: 484
+
+training loss: 0.33346012234687805 accuracy: 0.75
+test loss: 0.8824189305305481 accuracy: 0.625
+
+epoch: 485
+
+training loss: 0.4460487961769104 accuracy: 0.78125
+test loss: 1.2615911960601807 accuracy: 0.6875
+
+epoch: 486
+
+training loss: 0.28469330072402954 accuracy: 0.75
+test loss: 1.9382555484771729 accuracy: 0.75
+
+epoch: 487
+
+training loss: 0.22724777460098267 accuracy: 0.84375
+test loss: 1.9932341575622559 accuracy: 0.6875
+
+epoch: 488
+
+training loss: 0.44900086522102356 accuracy: 0.71875
+test loss: 0.9647487998008728 accuracy: 0.6875
+
+epoch: 489
+
+training loss: 0.47678419947624207 accuracy: 0.59375
+test loss: 0.17536765336990356 accuracy: 1.0
+
+epoch: 490
+
+training loss: 0.34055739641189575 accuracy: 0.71875
+test loss: 0.99372398853302 accuracy: 0.875
+
+epoch: 491
+
+training loss: 0.3149855136871338 accuracy: 0.71875
+test loss: 2.386423349380493 accuracy: 0.5625
+
+epoch: 492
+
+training loss: 0.3010205626487732 accuracy: 0.6875
+test loss: 2.638223648071289 accuracy: 0.375
+
+epoch: 493
+
+training loss: 0.47528043389320374 accuracy: 0.625
+test loss: 1.2666912078857422 accuracy: 0.75
+
+epoch: 494
+
+training loss: 0.3660178482532501 accuracy: 0.71875
+test loss: 1.923844337463379 accuracy: 0.625
+
+epoch: 495
+
+training loss: 0.25456225872039795 accuracy: 0.8125
+test loss: 2.1186509132385254 accuracy: 0.5
+
+epoch: 496
+
+training loss: 0.25558778643608093 accuracy: 0.875
+test loss: 1.745202898979187 accuracy: 0.625
+
+epoch: 497
+
+training loss: 0.3689851760864258 accuracy: 0.8125
+test loss: 1.5665180683135986 accuracy: 0.5
+
+epoch: 498
+
+training loss: 0.3388136625289917 accuracy: 0.8125
+test loss: 0.5185786485671997 accuracy: 0.8125
+
+epoch: 499
+
+training loss: 0.3873303234577179 accuracy: 0.71875
+test loss: 2.362301826477051 accuracy: 0.5625
+
+epoch: 500
+
+training loss: 0.3299884498119354 accuracy: 0.90625
+test loss: 1.014501929283142 accuracy: 0.75
+
+epoch: 501
+
+training loss: 0.19015195965766907 accuracy: 0.90625
+test loss: 1.0534015893936157 accuracy: 0.75
+
+epoch: 502
+
+training loss: 0.35806357860565186 accuracy: 0.8125
+test loss: 0.6574429869651794 accuracy: 0.75
+
+epoch: 503
+
+training loss: 0.2678433060646057 accuracy: 0.84375
+test loss: 0.9050135016441345 accuracy: 0.875
+
+epoch: 504
+
+training loss: 0.17659902572631836 accuracy: 0.90625
+test loss: 2.2913715839385986 accuracy: 0.8125
+
+epoch: 505
+
+training loss: 0.3417288064956665 accuracy: 0.84375
+test loss: 1.076487421989441 accuracy: 0.875
+
+epoch: 506
+
+training loss: 0.19474738836288452 accuracy: 0.9375
+test loss: 1.4548335075378418 accuracy: 0.4375
+
+epoch: 507
+
+training loss: 0.23705755174160004 accuracy: 0.9375
+test loss: 0.703120768070221 accuracy: 0.6875
+
+epoch: 508
+
+training loss: 0.2209455370903015 accuracy: 0.875
+test loss: 1.4463374614715576 accuracy: 0.75
+
+epoch: 509
+
+training loss: 0.24512600898742676 accuracy: 0.875
+test loss: 1.1139016151428223 accuracy: 0.8125
+
+epoch: 510
+
+training loss: 0.35045647621154785 accuracy: 0.84375
+test loss: 0.33020222187042236 accuracy: 0.875
+
+epoch: 511
+
+training loss: 0.20993956923484802 accuracy: 0.90625
+test loss: 0.24925416707992554 accuracy: 0.875
+
+epoch: 512
+
+training loss: 0.2584347128868103 accuracy: 0.875
+test loss: 0.21087294816970825 accuracy: 0.875
+
+epoch: 513
+
+training loss: 0.2932363748550415 accuracy: 0.875
+test loss: 0.5449031591415405 accuracy: 0.75
+
+epoch: 514
+
+training loss: 0.21685883402824402 accuracy: 0.875
+test loss: 1.032894253730774 accuracy: 0.75
+
+epoch: 515
+
+training loss: 0.412177711725235 accuracy: 0.78125
+test loss: 1.862274408340454 accuracy: 0.5625
+
+epoch: 516
+
+training loss: 0.3649740219116211 accuracy: 0.71875
+test loss: 1.3822120428085327 accuracy: 0.6875
+
+epoch: 517
+
+training loss: 0.3055744767189026 accuracy: 0.84375
+test loss: 0.333221971988678 accuracy: 0.875
+
+epoch: 518
+
+training loss: 0.44746139645576477 accuracy: 0.84375
+test loss: 1.7052861452102661 accuracy: 0.6875
+
+epoch: 519
+
+training loss: 0.3759971261024475 accuracy: 0.90625
+test loss: 2.149501085281372 accuracy: 0.6875
+
+epoch: 520
+
+training loss: 0.33571064472198486 accuracy: 0.78125
+test loss: 2.114306926727295 accuracy: 0.6875
+
+epoch: 521
+
+training loss: 0.27862751483917236 accuracy: 0.9375
+test loss: 0.5928047895431519 accuracy: 0.8125
+
+epoch: 522
+
+training loss: 0.27430522441864014 accuracy: 0.75
+test loss: 2.7987728118896484 accuracy: 0.6875
+
+epoch: 523
+
+training loss: 0.19676250219345093 accuracy: 0.875
+test loss: 0.22228220105171204 accuracy: 0.875
+
+epoch: 524
+
+training loss: 0.24733467400074005 accuracy: 0.875
+test loss: 1.1936721801757812 accuracy: 0.625
+
+epoch: 525
+
+training loss: 0.38954490423202515 accuracy: 0.875
+test loss: 0.5194473266601562 accuracy: 0.875
+
+epoch: 526
+
+training loss: 0.4542919993400574 accuracy: 0.65625
+test loss: 1.4823682308197021 accuracy: 0.5625
+
+epoch: 527
+
+training loss: 0.49839627742767334 accuracy: 0.5625
+test loss: 1.2652523517608643 accuracy: 0.6875
+
+epoch: 528
+
+training loss: 0.33806324005126953 accuracy: 0.8125
+test loss: 0.8659955263137817 accuracy: 0.625
+
+epoch: 529
+
+training loss: 0.546729326248169 accuracy: 0.8125
+test loss: 0.9222583770751953 accuracy: 0.5
+
+epoch: 530
+
+training loss: 0.3639569878578186 accuracy: 0.75
+test loss: 0.3549477458000183 accuracy: 0.9375
+
+epoch: 531
+
+training loss: 0.5498001575469971 accuracy: 0.5625
+test loss: 0.7230536937713623 accuracy: 0.75
+
+epoch: 532
+
+training loss: 0.4345870316028595 accuracy: 0.6875
+test loss: 0.6635814905166626 accuracy: 0.6875
+
+epoch: 533
+
+training loss: 0.5226595401763916 accuracy: 0.53125
+test loss: 0.6560704708099365 accuracy: 0.75
+
+epoch: 534
+
+training loss: 0.5512667894363403 accuracy: 0.59375
+test loss: 0.8520567417144775 accuracy: 0.75
+
+epoch: 535
+
+training loss: 0.519637942314148 accuracy: 0.625
+test loss: 1.1239440441131592 accuracy: 0.75
+
+epoch: 536
+
+training loss: 0.3649750351905823 accuracy: 0.71875
+test loss: 1.364978313446045 accuracy: 0.6875
+
+epoch: 537
+
+training loss: 0.2935560345649719 accuracy: 0.75
+test loss: 0.5732877850532532 accuracy: 0.875
+
+epoch: 538
+
+training loss: 0.40575435757637024 accuracy: 0.71875
+test loss: 0.4429042637348175 accuracy: 0.875
+
+epoch: 539
+
+training loss: 0.4623788595199585 accuracy: 0.625
+test loss: 1.3888944387435913 accuracy: 0.6875
+
+epoch: 540
+
+training loss: 0.43587714433670044 accuracy: 0.65625
+test loss: 0.4319893717765808 accuracy: 0.8125
+
+epoch: 541
+
+training loss: 0.3734264373779297 accuracy: 0.8125
+test loss: 1.1287285089492798 accuracy: 0.4375
+
+epoch: 542
+
+training loss: 0.3531583547592163 accuracy: 0.75
+test loss: 0.8760592341423035 accuracy: 0.5
+
+epoch: 543
+
+training loss: 0.3423477113246918 accuracy: 0.8125
+test loss: 1.5147552490234375 accuracy: 0.6875
+
+epoch: 544
+
+training loss: 0.4231511950492859 accuracy: 0.75
+test loss: 0.1935032308101654 accuracy: 0.875
+
+epoch: 545
+
+training loss: 0.27490460872650146 accuracy: 0.90625
+test loss: 0.6778456568717957 accuracy: 0.625
+
+epoch: 546
+
+training loss: 0.3450687527656555 accuracy: 0.84375
+test loss: 0.9638286828994751 accuracy: 0.6875
+
+epoch: 547
+
+training loss: 0.44371744990348816 accuracy: 0.71875
+test loss: 1.0154732465744019 accuracy: 0.75
+
+epoch: 548
+
+training loss: 0.21604470908641815 accuracy: 0.90625
+test loss: 1.1729857921600342 accuracy: 0.6875
+
+epoch: 549
+
+training loss: 0.4146117568016052 accuracy: 0.78125
+test loss: 0.517042875289917 accuracy: 0.6875
+
+epoch: 550
+
+training loss: 0.4464244246482849 accuracy: 0.6875
+test loss: 0.6023348569869995 accuracy: 0.6875
+
+epoch: 551
+
+training loss: 0.24960073828697205 accuracy: 0.9375
+test loss: 1.3406516313552856 accuracy: 0.75
+
+epoch: 552
+
+training loss: 0.49763381481170654 accuracy: 0.71875
+test loss: 0.42002493143081665 accuracy: 0.8125
+
+epoch: 553
+
+training loss: 0.33403515815734863 accuracy: 0.84375
+test loss: 1.9441266059875488 accuracy: 0.625
+
+epoch: 554
+
+training loss: 0.1704609990119934 accuracy: 0.9375
+test loss: 0.7613140940666199 accuracy: 0.5625
+
+epoch: 555
+
+training loss: 0.41910305619239807 accuracy: 0.75
+test loss: 1.5519218444824219 accuracy: 0.75
+
+epoch: 556
+
+training loss: 0.37193456292152405 accuracy: 0.8125
+test loss: 1.2611846923828125 accuracy: 0.625
+
+epoch: 557
+
+training loss: 0.368228554725647 accuracy: 0.84375
+test loss: 0.30043619871139526 accuracy: 0.8125
+
+epoch: 558
+
+training loss: 0.4963029623031616 accuracy: 0.6875
+test loss: 0.15628720819950104 accuracy: 0.9375
+
+epoch: 559
+
+training loss: 0.32704484462738037 accuracy: 0.875
+test loss: 0.8779526948928833 accuracy: 0.8125
+
+epoch: 560
+
+training loss: 0.2734919488430023 accuracy: 0.96875
+test loss: 0.4998875856399536 accuracy: 0.75
+
+epoch: 561
+
+training loss: 0.20718267560005188 accuracy: 0.9375
+test loss: 1.6755778789520264 accuracy: 0.625
+
+epoch: 562
+
+training loss: 0.3899293839931488 accuracy: 0.71875
+test loss: 0.7110224962234497 accuracy: 0.75
+
+epoch: 563
+
+training loss: 0.4852827787399292 accuracy: 0.6875
+test loss: 1.544466495513916 accuracy: 0.75
+
+epoch: 564
+
+training loss: 0.42465871572494507 accuracy: 0.8125
+test loss: 1.0530564785003662 accuracy: 0.5625
+
+epoch: 565
+
+training loss: 0.5078099966049194 accuracy: 0.78125
+test loss: 1.2164665460586548 accuracy: 0.8125
+
+epoch: 566
+
+training loss: 0.3542950451374054 accuracy: 0.78125
+test loss: 1.8813269138336182 accuracy: 0.625
+
+epoch: 567
+
+training loss: 0.24095378816127777 accuracy: 0.90625
+test loss: 0.3532969653606415 accuracy: 0.875
+
+epoch: 568
+
+training loss: 0.3515157103538513 accuracy: 0.78125
+test loss: 1.3455760478973389 accuracy: 0.625
+
+epoch: 569
+
+training loss: 0.2745305895805359 accuracy: 0.875
+test loss: 0.5028789043426514 accuracy: 0.75
+
+epoch: 570
+
+training loss: 0.2811908721923828 accuracy: 0.8125
+test loss: 0.3562104403972626 accuracy: 0.8125
+
+epoch: 571
+
+training loss: 0.3429138660430908 accuracy: 0.8125
+test loss: 1.097292423248291 accuracy: 0.75
+
+epoch: 572
+
+training loss: 0.2836697995662689 accuracy: 0.84375
+test loss: 0.5893968343734741 accuracy: 0.5
+
+epoch: 573
+
+training loss: 0.4005039930343628 accuracy: 0.84375
+test loss: 1.3114526271820068 accuracy: 0.5625
+
+epoch: 574
+
+training loss: 0.22574232518672943 accuracy: 0.90625
+test loss: 0.4249369502067566 accuracy: 0.8125
+
+epoch: 575
+
+training loss: 0.23600102961063385 accuracy: 0.875
+test loss: 0.165005624294281 accuracy: 0.875
+
+epoch: 576
+
+training loss: 0.5495041608810425 accuracy: 0.71875
+test loss: 1.1289052963256836 accuracy: 0.75
+
+epoch: 577
+
+training loss: 0.39409762620925903 accuracy: 0.75
+test loss: 1.2959144115447998 accuracy: 0.5625
+
+epoch: 578
+
+training loss: 0.2213243544101715 accuracy: 0.96875
+test loss: 0.49828237295150757 accuracy: 0.75
+
+epoch: 579
+
+training loss: 0.4031476676464081 accuracy: 0.8125
+test loss: 1.028621792793274 accuracy: 0.75
+
+epoch: 580
+
+training loss: 0.3327394127845764 accuracy: 0.84375
+test loss: 0.3483983874320984 accuracy: 0.75
+
+epoch: 581
+
+training loss: 0.3414287567138672 accuracy: 0.8125
+test loss: 1.337226390838623 accuracy: 0.625
+
+epoch: 582
+
+training loss: 0.4079367518424988 accuracy: 0.78125
+test loss: 0.660490870475769 accuracy: 0.625
+
+epoch: 583
+
+training loss: 0.25922590494155884 accuracy: 0.9375
+test loss: 0.8637368679046631 accuracy: 0.75
+
+epoch: 584
+
+training loss: 0.43761688470840454 accuracy: 0.75
+test loss: 2.9618403911590576 accuracy: 0.5625
+
+epoch: 585
+
+training loss: 0.3042232394218445 accuracy: 0.8125
+test loss: 0.6992422342300415 accuracy: 0.4375
+
+epoch: 586
+
+training loss: 0.2963305711746216 accuracy: 0.875
+test loss: 1.744279146194458 accuracy: 0.6875
+
+epoch: 587
+
+training loss: 0.4607280492782593 accuracy: 0.71875
+test loss: 0.6891137957572937 accuracy: 0.5625
+
+epoch: 588
+
+training loss: 0.44038963317871094 accuracy: 0.8125
+test loss: 1.2338656187057495 accuracy: 0.6875
+
+epoch: 589
+
+training loss: 0.36918455362319946 accuracy: 0.78125
+test loss: 1.5520063638687134 accuracy: 0.5
+
+epoch: 590
+
+training loss: 0.35571640729904175 accuracy: 0.75
+test loss: 0.9309659004211426 accuracy: 0.75
+
+epoch: 591
+
+training loss: 0.34457653760910034 accuracy: 0.8125
+test loss: 1.0189870595932007 accuracy: 0.4375
+
+epoch: 592
+
+training loss: 0.3474041819572449 accuracy: 0.8125
+test loss: 0.886101245880127 accuracy: 0.75
+
+epoch: 593
+
+training loss: 0.20171144604682922 accuracy: 0.96875
+test loss: 1.4628417491912842 accuracy: 0.6875
+
+epoch: 594
+
+training loss: 0.326032817363739 accuracy: 0.90625
+test loss: 1.1096453666687012 accuracy: 0.625
+
+epoch: 595
+
+training loss: 0.3061545491218567 accuracy: 0.875
+test loss: 0.23384004831314087 accuracy: 0.8125
+
+epoch: 596
+
+training loss: 0.38915613293647766 accuracy: 0.84375
+test loss: 2.223410129547119 accuracy: 0.625
+
+epoch: 597
+
+training loss: 0.3824272155761719 accuracy: 0.78125
+test loss: 0.5317233800888062 accuracy: 0.75
+
+epoch: 598
+
+training loss: 0.3156471252441406 accuracy: 0.875
+test loss: 1.6133474111557007 accuracy: 0.6875
+
+epoch: 599
+
+training loss: 0.2502859830856323 accuracy: 0.84375
+test loss: 1.7018067836761475 accuracy: 0.6875
+
+epoch: 600
+
+training loss: 0.5592671036720276 accuracy: 0.8125
+test loss: 2.0760838985443115 accuracy: 0.6875
+
+epoch: 601
+
+training loss: 0.4863337278366089 accuracy: 0.84375
+test loss: 1.3284300565719604 accuracy: 0.5625
+
+epoch: 602
+
+training loss: 0.3463054597377777 accuracy: 0.71875
+test loss: 1.0328710079193115 accuracy: 0.625
+
+epoch: 603
+
+training loss: 0.4126277267932892 accuracy: 0.78125
+test loss: 1.8312456607818604 accuracy: 0.5625
+
+epoch: 604
+
+training loss: 0.4067002534866333 accuracy: 0.8125
+test loss: 0.6926786303520203 accuracy: 0.625
+
+epoch: 605
+
+training loss: 0.3543218970298767 accuracy: 0.84375
+test loss: 1.3392925262451172 accuracy: 0.5625
+
+epoch: 606
+
+training loss: 0.33714067935943604 accuracy: 0.75
+test loss: 2.2370195388793945 accuracy: 0.625
+
+epoch: 607
+
+training loss: 0.4151610732078552 accuracy: 0.8125
+test loss: 1.5963308811187744 accuracy: 0.625
+
+epoch: 608
+
+training loss: 0.44400593638420105 accuracy: 0.8125
+test loss: 2.2650809288024902 accuracy: 0.5
+
+epoch: 609
+
+training loss: 0.291989266872406 accuracy: 0.84375
+test loss: 1.8974288702011108 accuracy: 0.5
+
+epoch: 610
+
+training loss: 0.3463078439235687 accuracy: 0.8125
+test loss: 2.8319411277770996 accuracy: 0.5625
+
+epoch: 611
+
+training loss: 0.5238797664642334 accuracy: 0.78125
+test loss: 0.7955939769744873 accuracy: 0.5
+
+epoch: 612
+
+training loss: 0.3494092524051666 accuracy: 0.84375
+test loss: 1.6275839805603027 accuracy: 0.625
+
+epoch: 613
+
+training loss: 0.5422488451004028 accuracy: 0.71875
+test loss: 0.3914113938808441 accuracy: 0.8125
+
+epoch: 614
+
+training loss: 0.3656129539012909 accuracy: 0.8125
+test loss: 1.9687116146087646 accuracy: 0.5625
+
+epoch: 615
+
+training loss: 0.20607660710811615 accuracy: 0.90625
+test loss: 2.6347012519836426 accuracy: 0.5625
+
+epoch: 616
+
+training loss: 0.34511637687683105 accuracy: 0.78125
+test loss: 2.005946397781372 accuracy: 0.625
+
+epoch: 617
+
+training loss: 0.2345929741859436 accuracy: 0.90625
+test loss: 1.3959014415740967 accuracy: 0.5
+
+epoch: 618
+
+training loss: 0.4810669422149658 accuracy: 0.71875
+test loss: 0.5452715158462524 accuracy: 0.8125
+
+epoch: 619
+
+training loss: 0.35081401467323303 accuracy: 0.84375
+test loss: 0.4688079059123993 accuracy: 0.75
+
+epoch: 620
+
+training loss: 0.4211806654930115 accuracy: 0.875
+test loss: 1.1259441375732422 accuracy: 0.625
+
+epoch: 621
+
+training loss: 0.4145645201206207 accuracy: 0.875
+test loss: 1.6477361917495728 accuracy: 0.625
+
+epoch: 622
+
+training loss: 1.0277249813079834 accuracy: 0.78125
+test loss: 0.5163651704788208 accuracy: 0.6875
+
+epoch: 623
+
+training loss: 0.9660714864730835 accuracy: 0.71875
+test loss: 1.6886439323425293 accuracy: 0.6875
+
+epoch: 624
+
+training loss: 0.7534264922142029 accuracy: 0.59375
+test loss: 0.5737402439117432 accuracy: 0.8125
+
+epoch: 625
+
+training loss: 1.3518610000610352 accuracy: 0.3125
+test loss: 0.6219710111618042 accuracy: 0.625
+
+epoch: 626
+
+training loss: 0.9942810535430908 accuracy: 0.625
+test loss: 2.067673921585083 accuracy: 0.3125
+
+epoch: 627
+
+training loss: 1.0066845417022705 accuracy: 0.4375
+test loss: 1.2022404670715332 accuracy: 0.5625
+
+epoch: 628
+
+training loss: 1.1129133701324463 accuracy: 0.53125
+test loss: 1.6688756942749023 accuracy: 0.3125
+
+epoch: 629
+
+training loss: 1.1144561767578125 accuracy: 0.5625
+test loss: 1.7751566171646118 accuracy: 0.5
+
+epoch: 630
+
+training loss: 0.8670299053192139 accuracy: 0.53125
+test loss: 0.839225172996521 accuracy: 0.75
+
+epoch: 631
+
+training loss: 1.4146103858947754 accuracy: 0.375
+test loss: 1.3862450122833252 accuracy: 0.5625
+
+epoch: 632
+
+training loss: 1.0615404844284058 accuracy: 0.5
+test loss: 1.2391787767410278 accuracy: 0.5
+
+epoch: 633
+
+training loss: 1.1003185510635376 accuracy: 0.4375
+test loss: 1.362500548362732 accuracy: 0.375
+
+epoch: 634
+
+training loss: 1.0144178867340088 accuracy: 0.46875
+test loss: 1.5018668174743652 accuracy: 0.3125
+
+epoch: 635
+
+training loss: 0.605423629283905 accuracy: 0.71875
+test loss: 0.8982946872711182 accuracy: 0.625
+
+epoch: 636
+
+training loss: 0.8299804925918579 accuracy: 0.5
+test loss: 0.9716321229934692 accuracy: 0.625
+
+epoch: 637
+
+training loss: 0.8415138125419617 accuracy: 0.5625
+test loss: 1.0382261276245117 accuracy: 0.5625
+
+epoch: 638
+
+training loss: 0.9474627375602722 accuracy: 0.40625
+test loss: 0.7533392310142517 accuracy: 0.5
+
+epoch: 639
+
+training loss: 0.6508684158325195 accuracy: 0.59375
+test loss: 0.748921275138855 accuracy: 0.625
+
+epoch: 640
+
+training loss: 0.8212740421295166 accuracy: 0.5
+test loss: 0.968195915222168 accuracy: 0.5625
+
+epoch: 641
+
+training loss: 0.6034310460090637 accuracy: 0.59375
+test loss: 0.8393287658691406 accuracy: 0.625
+
+epoch: 642
+
+training loss: 0.8483585119247437 accuracy: 0.46875
+test loss: 0.48663556575775146 accuracy: 0.75
+
+epoch: 643
+
+training loss: 0.7182944416999817 accuracy: 0.5625
+test loss: 0.596323549747467 accuracy: 0.75
+
+epoch: 644
+
+training loss: 0.739946722984314 accuracy: 0.46875
+test loss: 0.7266519069671631 accuracy: 0.8125
+
+epoch: 645
+
+training loss: 0.9579883813858032 accuracy: 0.4375
+test loss: 0.6658574342727661 accuracy: 0.8125
+
+epoch: 646
+
+training loss: 0.7390835285186768 accuracy: 0.5625
+test loss: 0.8103715181350708 accuracy: 0.75
+
+epoch: 647
+
+training loss: 0.7174209952354431 accuracy: 0.59375
+test loss: 0.4690973162651062 accuracy: 0.875
+
+epoch: 648
+
+training loss: 0.7242158651351929 accuracy: 0.5625
+test loss: 0.3463910222053528 accuracy: 0.875
+
+epoch: 649
+
+training loss: 0.8665468692779541 accuracy: 0.46875
+test loss: 0.7304613590240479 accuracy: 0.75
+
+epoch: 650
+
+training loss: 0.8241934776306152 accuracy: 0.5
+test loss: 0.5306617617607117 accuracy: 0.8125
+
+epoch: 651
+
+training loss: 0.5603598356246948 accuracy: 0.625
+test loss: 0.8355579376220703 accuracy: 0.6875
+
+epoch: 652
+
+training loss: 0.5540841221809387 accuracy: 0.71875
+test loss: 0.6494059562683105 accuracy: 0.6875
+
+epoch: 653
+
+training loss: 0.6297284364700317 accuracy: 0.5625
+test loss: 0.5434459447860718 accuracy: 0.75
+
+epoch: 654
+
+training loss: 0.4737600088119507 accuracy: 0.75
+test loss: 0.6252054572105408 accuracy: 0.6875
+
+epoch: 655
+
+training loss: 0.5163493156433105 accuracy: 0.75
+test loss: 0.29326894879341125 accuracy: 0.875
+
+epoch: 656
+
+training loss: 0.5838428735733032 accuracy: 0.5625
+test loss: 0.6091530919075012 accuracy: 0.6875
+
+epoch: 657
+
+training loss: 0.37771812081336975 accuracy: 0.8125
+test loss: 0.3626016676425934 accuracy: 0.8125
+
+epoch: 658
+
+training loss: 0.6350219249725342 accuracy: 0.625
+test loss: 0.4370668828487396 accuracy: 0.8125
+
+epoch: 659
+
+training loss: 0.565817654132843 accuracy: 0.65625
+test loss: 0.31508272886276245 accuracy: 0.9375
+
+epoch: 660
+
+training loss: 0.7006515264511108 accuracy: 0.625
+test loss: 0.6294983625411987 accuracy: 0.625
+
+epoch: 661
+
+training loss: 0.4369705021381378 accuracy: 0.71875
+test loss: 0.3998784124851227 accuracy: 0.8125
+
+epoch: 662
+
+training loss: 0.5175557732582092 accuracy: 0.6875
+test loss: 0.30556565523147583 accuracy: 0.8125
+
+epoch: 663
+
+training loss: 0.3949102759361267 accuracy: 0.6875
+test loss: 0.5327402353286743 accuracy: 0.75
+
+epoch: 664
+
+training loss: 0.6194146871566772 accuracy: 0.71875
+test loss: 0.4088021218776703 accuracy: 0.8125
+
+epoch: 665
+
+training loss: 0.46023619174957275 accuracy: 0.75
+test loss: 0.35660842061042786 accuracy: 0.875
+
+epoch: 666
+
+training loss: 0.7229801416397095 accuracy: 0.71875
+test loss: 0.3897823095321655 accuracy: 0.875
+
+epoch: 667
+
+training loss: 0.3142527937889099 accuracy: 0.8125
+test loss: 0.2227058708667755 accuracy: 0.9375
+
+epoch: 668
+
+training loss: 0.40504199266433716 accuracy: 0.8125
+test loss: 0.3322913944721222 accuracy: 0.875
+
+epoch: 669
+
+training loss: 0.5844212770462036 accuracy: 0.65625
+test loss: 0.2386721819639206 accuracy: 0.9375
+
+epoch: 670
+
+training loss: 0.42845699191093445 accuracy: 0.71875
+test loss: 0.48315051198005676 accuracy: 0.8125
+
+epoch: 671
+
+training loss: 0.4956578016281128 accuracy: 0.71875
+test loss: 0.7009173035621643 accuracy: 0.6875
+
+epoch: 672
+
+training loss: 0.6230509281158447 accuracy: 0.65625
+test loss: 0.07049313932657242 accuracy: 1.0
+
+epoch: 673
+
+training loss: 0.8272383809089661 accuracy: 0.5625
+test loss: 0.4360983371734619 accuracy: 0.75
+
+epoch: 674
+
+training loss: 0.4459238052368164 accuracy: 0.625
+test loss: 0.531741201877594 accuracy: 0.75
+
+epoch: 675
+
+training loss: 0.44592708349227905 accuracy: 0.6875
+test loss: 0.2636036276817322 accuracy: 0.875
+
+epoch: 676
+
+training loss: 0.2924928367137909 accuracy: 0.84375
+test loss: 0.4630836844444275 accuracy: 0.6875
+
+epoch: 677
+
+training loss: 0.3153214752674103 accuracy: 0.9375
+test loss: 0.7585688233375549 accuracy: 0.6875
+
+epoch: 678
+
+training loss: 0.2598873972892761 accuracy: 0.90625
+test loss: 1.145858883857727 accuracy: 0.5625
+
+epoch: 679
+
+training loss: 0.28238731622695923 accuracy: 0.90625
+test loss: 0.8942632675170898 accuracy: 0.625
+
+epoch: 680
+
+training loss: 0.4382895827293396 accuracy: 0.8125
+test loss: 0.46422576904296875 accuracy: 0.75
+
+epoch: 681
+
+training loss: 0.33484894037246704 accuracy: 0.84375
+test loss: 0.4933452010154724 accuracy: 0.625
+
+epoch: 682
+
+training loss: 0.3476542830467224 accuracy: 0.8125
+test loss: 0.747301459312439 accuracy: 0.5625
+
+epoch: 683
+
+training loss: 0.25080108642578125 accuracy: 0.90625
+test loss: 0.3881743252277374 accuracy: 0.875
+
+epoch: 684
+
+training loss: 0.5607790946960449 accuracy: 0.8125
+test loss: 0.5857986211776733 accuracy: 0.8125
+
+epoch: 685
+
+training loss: 0.3447285592556 accuracy: 0.8125
+test loss: 0.5912460088729858 accuracy: 0.5625
+
+epoch: 686
+
+training loss: 0.32746052742004395 accuracy: 0.8125
+test loss: 0.8870453238487244 accuracy: 0.6875
+
+epoch: 687
+
+training loss: 0.27733486890792847 accuracy: 0.90625
+test loss: 0.4507444202899933 accuracy: 0.9375
+
+epoch: 688
+
+training loss: 0.3441337049007416 accuracy: 0.6875
+test loss: 0.08927085995674133 accuracy: 0.9375
+
+epoch: 689
+
+training loss: 0.4200363755226135 accuracy: 0.8125
+test loss: 1.0703890323638916 accuracy: 0.625
+
+epoch: 690
+
+training loss: 0.51488196849823 accuracy: 0.75
+test loss: 0.9914354085922241 accuracy: 0.75
+
+epoch: 691
+
+training loss: 0.2569675147533417 accuracy: 0.875
+test loss: 1.2120323181152344 accuracy: 0.625
+
+epoch: 692
+
+training loss: 0.22970731556415558 accuracy: 0.90625
+test loss: 0.5138403177261353 accuracy: 0.9375
+
+epoch: 693
+
+training loss: 0.37567630410194397 accuracy: 0.8125
+test loss: 0.6494699120521545 accuracy: 0.8125
+
+epoch: 694
+
+training loss: 0.47237449884414673 accuracy: 0.71875
+test loss: 0.5419055819511414 accuracy: 0.8125
+
+epoch: 695
+
+training loss: 0.3699657917022705 accuracy: 0.84375
+test loss: 1.3617675304412842 accuracy: 0.75
+
+epoch: 696
+
+training loss: 0.8197758197784424 accuracy: 0.625
+test loss: 0.5719319581985474 accuracy: 0.8125
+
+epoch: 697
+
+training loss: 0.9461457133293152 accuracy: 0.59375
+test loss: 0.9646720290184021 accuracy: 0.6875
+
+epoch: 698
+
+training loss: 0.5941858291625977 accuracy: 0.71875
+test loss: 0.7748123407363892 accuracy: 0.75
+
+epoch: 699
+
+training loss: 0.4943160116672516 accuracy: 0.71875
+test loss: 0.5873929858207703 accuracy: 0.5625
+
+epoch: 700
+
+training loss: 0.3017686605453491 accuracy: 0.8125
+test loss: 0.5229377746582031 accuracy: 0.75
+
+epoch: 701
+
+training loss: 0.433435320854187 accuracy: 0.75
+test loss: 0.35530465841293335 accuracy: 0.875
+
+epoch: 702
+
+training loss: 0.44569283723831177 accuracy: 0.71875
+test loss: 0.24798636138439178 accuracy: 0.8125
+
+epoch: 703
+
+training loss: 0.2539166808128357 accuracy: 0.875
+test loss: 0.2670578062534332 accuracy: 0.8125
+
+epoch: 704
+
+training loss: 0.25832512974739075 accuracy: 0.90625
+test loss: 0.45280373096466064 accuracy: 0.625
+
+epoch: 705
+
+training loss: 0.18148024380207062 accuracy: 0.96875
+test loss: 0.5910143852233887 accuracy: 0.5625
+
+epoch: 706
+
+training loss: 0.31797242164611816 accuracy: 0.8125
+test loss: 1.1465153694152832 accuracy: 0.5625
+
+epoch: 707
+
+training loss: 0.1891128122806549 accuracy: 0.9375
+test loss: 0.5582222938537598 accuracy: 0.8125
+
+epoch: 708
+
+training loss: 0.20870888233184814 accuracy: 0.875
+test loss: 0.7599331140518188 accuracy: 0.625
+
+epoch: 709
+
+training loss: 0.2237185835838318 accuracy: 0.875
+test loss: 0.3707566261291504 accuracy: 0.8125
+
+epoch: 710
+
+training loss: 0.35421323776245117 accuracy: 0.84375
+test loss: 0.6896651983261108 accuracy: 0.625
+
+epoch: 711
+
+training loss: 0.2605871856212616 accuracy: 0.84375
+test loss: 0.5249429941177368 accuracy: 0.8125
+
+epoch: 712
+
+training loss: 0.21467643976211548 accuracy: 0.84375
+test loss: 0.5086095333099365 accuracy: 0.875
+
+epoch: 713
+
+training loss: 0.23862138390541077 accuracy: 0.90625
+test loss: 0.24445179104804993 accuracy: 0.8125
+
+epoch: 714
+
+training loss: 0.29299235343933105 accuracy: 0.90625
+test loss: 0.2634437084197998 accuracy: 0.8125
+
+epoch: 715
+
+training loss: 0.2612038254737854 accuracy: 0.875
+test loss: 0.9484232068061829 accuracy: 0.625
+
+epoch: 716
+
+training loss: 0.3925345540046692 accuracy: 0.8125
+test loss: 0.450141578912735 accuracy: 0.9375
+
+epoch: 717
+
+training loss: 0.3790462017059326 accuracy: 0.78125
+test loss: 0.5264213681221008 accuracy: 0.75
+
+epoch: 718
+
+training loss: 0.31783345341682434 accuracy: 0.8125
+test loss: 0.24772968888282776 accuracy: 0.75
+
+epoch: 719
+
+training loss: 0.35545217990875244 accuracy: 0.90625
+test loss: 0.23078840970993042 accuracy: 0.9375
+
+epoch: 720
+
+training loss: 0.2956661880016327 accuracy: 0.875
+test loss: 0.4935056269168854 accuracy: 0.875
+
+epoch: 721
+
+training loss: 0.5463055372238159 accuracy: 0.75
+test loss: 0.1744452714920044 accuracy: 0.875
+
+epoch: 722
+
+training loss: 0.41324710845947266 accuracy: 0.90625
+test loss: 0.43231654167175293 accuracy: 0.875
+
+epoch: 723
+
+training loss: 0.14130499958992004 accuracy: 0.90625
+test loss: 0.19749417901039124 accuracy: 0.9375
+
+epoch: 724
+
+training loss: 0.21636125445365906 accuracy: 0.75
+test loss: 0.2722575068473816 accuracy: 0.75
+
+epoch: 725
+
+training loss: 0.3485404849052429 accuracy: 0.8125
+test loss: 0.287289023399353 accuracy: 0.8125
+
+epoch: 726
+
+training loss: 0.40898972749710083 accuracy: 0.6875
+test loss: 0.11458680033683777 accuracy: 0.9375
+
+epoch: 727
+
+training loss: 0.4276226758956909 accuracy: 0.71875
+test loss: 0.6957197189331055 accuracy: 0.75
+
+epoch: 728
+
+training loss: 0.4647204875946045 accuracy: 0.65625
+test loss: 0.23922817409038544 accuracy: 0.8125
+
+epoch: 729
+
+training loss: 0.3025118112564087 accuracy: 0.78125
+test loss: 0.675767719745636 accuracy: 0.875
+
+epoch: 730
+
+training loss: 0.392927348613739 accuracy: 0.6875
+test loss: 0.2623567581176758 accuracy: 0.875
+
+epoch: 731
+
+training loss: 0.42489907145500183 accuracy: 0.8125
+test loss: 0.5297152400016785 accuracy: 0.9375
+
+epoch: 732
+
+training loss: 0.38746553659439087 accuracy: 0.8125
+test loss: 0.7778955698013306 accuracy: 0.4375
+
+epoch: 733
+
+training loss: 0.5286141037940979 accuracy: 0.75
+test loss: 0.15716031193733215 accuracy: 0.9375
+
+epoch: 734
+
+training loss: 0.3244328498840332 accuracy: 0.75
+test loss: 0.6084811091423035 accuracy: 0.75
+
+epoch: 735
+
+training loss: 0.4978162944316864 accuracy: 0.65625
+test loss: 0.8189098834991455 accuracy: 0.8125
+
+epoch: 736
+
+training loss: 0.2256605178117752 accuracy: 0.78125
+test loss: 0.03738304227590561 accuracy: 1.0
+
+epoch: 737
+
+training loss: 0.546714186668396 accuracy: 0.75
+test loss: 0.4548170566558838 accuracy: 0.75
+
+epoch: 738
+
+training loss: 0.6589332818984985 accuracy: 0.6875
+test loss: 1.6653938293457031 accuracy: 0.6875
+
+epoch: 739
+
+training loss: 0.31669801473617554 accuracy: 0.8125
+test loss: 0.5928269028663635 accuracy: 0.625
+
+epoch: 740
+
+training loss: 0.5153179168701172 accuracy: 0.71875
+test loss: 1.6513917446136475 accuracy: 0.5
+
+epoch: 741
+
+training loss: 0.2835318446159363 accuracy: 0.875
+test loss: 1.3126410245895386 accuracy: 0.5
+
+epoch: 742
+
+training loss: 0.8434789180755615 accuracy: 0.59375
+test loss: 2.9806694984436035 accuracy: 0.3125
+
+epoch: 743
+
+training loss: 0.6565598249435425 accuracy: 0.6875
+test loss: 0.6796959042549133 accuracy: 0.8125
+
+epoch: 744
+
+training loss: 0.5837212800979614 accuracy: 0.6875
+test loss: 0.9698711633682251 accuracy: 0.5625
+
+epoch: 745
+
+training loss: 0.3620736598968506 accuracy: 0.8125
+test loss: 1.1421027183532715 accuracy: 0.5
+
+epoch: 746
+
+training loss: 0.29169762134552 accuracy: 0.84375
+test loss: 1.0089972019195557 accuracy: 0.5
+
+epoch: 747
+
+training loss: 0.47756117582321167 accuracy: 0.71875
+test loss: 0.2579229176044464 accuracy: 0.875
+
+epoch: 748
+
+training loss: 0.296520471572876 accuracy: 0.90625
+test loss: 0.6824733018875122 accuracy: 0.6875
+
+epoch: 749
+
+training loss: 0.27565163373947144 accuracy: 0.96875
+test loss: 0.3538121283054352 accuracy: 0.6875
+
+epoch: 750
+
+training loss: 0.3002013862133026 accuracy: 0.75
+test loss: 0.21521411836147308 accuracy: 0.875
+
+epoch: 751
+
+training loss: 0.28455132246017456 accuracy: 0.90625
+test loss: 0.8713839054107666 accuracy: 0.5625
+
+epoch: 752
+
+training loss: 0.23363691568374634 accuracy: 0.9375
+test loss: 0.4863923490047455 accuracy: 0.875
+
+epoch: 753
+
+training loss: 0.22531548142433167 accuracy: 0.875
+test loss: 0.4882162809371948 accuracy: 0.875
+
+epoch: 754
+
+training loss: 0.2348136454820633 accuracy: 0.90625
+test loss: 0.7408041954040527 accuracy: 0.8125
+
+epoch: 755
+
+training loss: 0.37566906213760376 accuracy: 0.625
+test loss: 0.3385612964630127 accuracy: 0.9375
+
+epoch: 756
+
+training loss: 0.4197593927383423 accuracy: 0.75
+test loss: 0.5200273990631104 accuracy: 0.875
+
+epoch: 757
+
+training loss: 0.20494535565376282 accuracy: 0.875
+test loss: 0.23623716831207275 accuracy: 1.0
+
+epoch: 758
+
+training loss: 0.254146009683609 accuracy: 0.8125
+test loss: 0.24460101127624512 accuracy: 1.0
+
+epoch: 759
+
+training loss: 0.2566688656806946 accuracy: 0.8125
+test loss: 0.40715640783309937 accuracy: 0.9375
+
+epoch: 760
+
+training loss: 0.5305210947990417 accuracy: 0.75
+test loss: 0.38326704502105713 accuracy: 0.875
+
+epoch: 761
+
+training loss: 0.19683891534805298 accuracy: 0.90625
+test loss: 0.2589871883392334 accuracy: 0.9375
+
+epoch: 762
+
+training loss: 0.2202097326517105 accuracy: 0.84375
+test loss: 0.2710804045200348 accuracy: 0.8125
+
+epoch: 763
+
+training loss: 0.32716214656829834 accuracy: 0.78125
+test loss: 0.7775214910507202 accuracy: 0.6875
+
+epoch: 764
+
+training loss: 0.20027339458465576 accuracy: 0.90625
+test loss: 0.3590472638607025 accuracy: 0.875
+
+epoch: 765
+
+training loss: 0.49763965606689453 accuracy: 0.6875
+test loss: 0.4958755075931549 accuracy: 0.75
+
+epoch: 766
+
+training loss: 0.39361685514450073 accuracy: 0.78125
+test loss: 0.2423565685749054 accuracy: 0.8125
+
+epoch: 767
+
+training loss: 0.39355558156967163 accuracy: 0.8125
+test loss: 0.22800195217132568 accuracy: 0.875
+
+epoch: 768
+
+training loss: 0.4330415725708008 accuracy: 0.71875
+test loss: 0.6810972690582275 accuracy: 0.875
+
+epoch: 769
+
+training loss: 0.5914086103439331 accuracy: 0.625
+test loss: 0.9375641942024231 accuracy: 0.8125
+
+epoch: 770
+
+training loss: 0.22624358534812927 accuracy: 0.84375
+test loss: 0.3696531057357788 accuracy: 0.9375
+
+epoch: 771
+
+training loss: 0.44058600068092346 accuracy: 0.78125
+test loss: 1.256081461906433 accuracy: 0.75
+
+epoch: 772
+
+training loss: 0.763369619846344 accuracy: 0.6875
+test loss: 1.1132569313049316 accuracy: 0.8125
+
+epoch: 773
+
+training loss: 0.6466751098632812 accuracy: 0.625
+test loss: 0.4184335768222809 accuracy: 0.8125
+
+epoch: 774
+
+training loss: 0.30363917350769043 accuracy: 0.8125
+test loss: 2.1054582595825195 accuracy: 0.6875
+
+epoch: 775
+
+training loss: 0.4401884377002716 accuracy: 0.84375
+test loss: 2.084163188934326 accuracy: 0.6875
+
+epoch: 776
+
+training loss: 0.2626257836818695 accuracy: 0.8125
+test loss: 0.8103863000869751 accuracy: 0.8125
+
+epoch: 777
+
+training loss: 0.1941811442375183 accuracy: 0.84375
+test loss: 1.0468519926071167 accuracy: 0.6875
+
+epoch: 778
+
+training loss: 0.3350967764854431 accuracy: 0.65625
+test loss: 1.5980863571166992 accuracy: 0.625
+
+epoch: 779
+
+training loss: 0.3507467806339264 accuracy: 0.78125
+test loss: 1.7448487281799316 accuracy: 0.6875
+
+epoch: 780
+
+training loss: 0.326995849609375 accuracy: 0.8125
+test loss: 1.5066871643066406 accuracy: 0.75
+
+epoch: 781
+
+training loss: 0.26770147681236267 accuracy: 0.8125
+test loss: 2.0620477199554443 accuracy: 0.625
+
+epoch: 782
+
+training loss: 0.22223222255706787 accuracy: 0.90625
+test loss: 0.7018045783042908 accuracy: 0.8125
+
+epoch: 783
+
+training loss: 0.2520099878311157 accuracy: 0.8125
+test loss: 0.54761803150177 accuracy: 0.875
+
+epoch: 784
+
+training loss: 0.416616827249527 accuracy: 0.75
+test loss: 1.243000864982605 accuracy: 0.6875
+
+epoch: 785
+
+training loss: 0.6651250123977661 accuracy: 0.75
+test loss: 0.1967354714870453 accuracy: 1.0
+
+epoch: 786
+
+training loss: 0.6807466745376587 accuracy: 0.6875
+test loss: 0.5937926769256592 accuracy: 0.75
+
+epoch: 787
+
+training loss: 1.240321397781372 accuracy: 0.625
+test loss: 2.5654687881469727 accuracy: 0.4375
+
+epoch: 788
+
+training loss: 0.9911296367645264 accuracy: 0.6875
+test loss: 2.072434186935425 accuracy: 0.5
+
+epoch: 789
+
+training loss: 1.0157357454299927 accuracy: 0.625
+test loss: 1.353600025177002 accuracy: 0.625
+
+epoch: 790
+
+training loss: 0.6376557350158691 accuracy: 0.75
+test loss: 1.0929030179977417 accuracy: 0.625
+
+epoch: 791
+
+training loss: 0.414074182510376 accuracy: 0.84375
+test loss: 1.8409042358398438 accuracy: 0.3125
+
+epoch: 792
+
+training loss: 0.5740183591842651 accuracy: 0.75
+test loss: 0.8898311853408813 accuracy: 0.625
+
+epoch: 793
+
+training loss: 0.4533260464668274 accuracy: 0.8125
+test loss: 0.8251774907112122 accuracy: 0.6875
+
+epoch: 794
+
+training loss: 0.4158592224121094 accuracy: 0.8125
+test loss: 1.006978988647461 accuracy: 0.625
+
+epoch: 795
+
+training loss: 0.48670583963394165 accuracy: 0.8125
+test loss: 0.8681882619857788 accuracy: 0.75
+
+epoch: 796
+
+training loss: 0.3911992311477661 accuracy: 0.8125
+test loss: 0.8855279684066772 accuracy: 0.6875
+
+epoch: 797
+
+training loss: 0.4588538408279419 accuracy: 0.84375
+test loss: 1.1572580337524414 accuracy: 0.4375
+
+epoch: 798
+
+training loss: 0.3023459315299988 accuracy: 0.84375
+test loss: 1.1424524784088135 accuracy: 0.75
+
+epoch: 799
+
+training loss: 0.3896716833114624 accuracy: 0.84375
+test loss: 0.8838760256767273 accuracy: 0.6875
+
+epoch: 800
+
+training loss: 0.47573837637901306 accuracy: 0.78125
+test loss: 0.38933396339416504 accuracy: 0.875
+
+epoch: 801
+
+training loss: 0.40637296438217163 accuracy: 0.75
+test loss: 0.42025065422058105 accuracy: 0.875
+
+epoch: 802
+
+training loss: 0.373139888048172 accuracy: 0.78125
+test loss: 1.0194816589355469 accuracy: 0.5625
+
+epoch: 803
+
+training loss: 0.4336174726486206 accuracy: 0.8125
+test loss: 1.0888879299163818 accuracy: 0.625
+
+epoch: 804
+
+training loss: 0.2536342144012451 accuracy: 0.84375
+test loss: 1.5382440090179443 accuracy: 0.4375
+
+epoch: 805
+
+training loss: 0.4549295902252197 accuracy: 0.78125
+test loss: 1.7471776008605957 accuracy: 0.5
+
+epoch: 806
+
+training loss: 0.39875146746635437 accuracy: 0.84375
+test loss: 1.1392765045166016 accuracy: 0.5625
+
+epoch: 807
+
+training loss: 0.33129221200942993 accuracy: 0.8125
+test loss: 1.452329158782959 accuracy: 0.5
+
+epoch: 808
+
+training loss: 0.19321896135807037 accuracy: 0.875
+test loss: 0.9834858179092407 accuracy: 0.625
+
+epoch: 809
+
+training loss: 0.42975157499313354 accuracy: 0.8125
+test loss: 0.431512713432312 accuracy: 0.875
+
+epoch: 810
+
+training loss: 0.2320602983236313 accuracy: 0.90625
+test loss: 1.9426093101501465 accuracy: 0.3125
+
+epoch: 811
+
+training loss: 0.31691402196884155 accuracy: 0.84375
+test loss: 0.8629940748214722 accuracy: 0.5
+
+epoch: 812
+
+training loss: 0.25891178846359253 accuracy: 0.875
+test loss: 1.4252896308898926 accuracy: 0.4375
+
+epoch: 813
+
+training loss: 0.23949453234672546 accuracy: 0.875
+test loss: 0.9604547023773193 accuracy: 0.625
+
+epoch: 814
+
+training loss: 0.4833582937717438 accuracy: 0.71875
+test loss: 1.467254638671875 accuracy: 0.4375
+
+epoch: 815
+
+training loss: 0.20334991812705994 accuracy: 0.9375
+test loss: 1.2739300727844238 accuracy: 0.75
+
+epoch: 816
+
+training loss: 0.3123449683189392 accuracy: 0.84375
+test loss: 1.2271220684051514 accuracy: 0.6875
+
+epoch: 817
+
+training loss: 0.470178484916687 accuracy: 0.71875
+test loss: 1.5322730541229248 accuracy: 0.5
+
+epoch: 818
+
+training loss: 0.2650377154350281 accuracy: 0.875
+test loss: 1.5951871871948242 accuracy: 0.4375
+
+epoch: 819
+
+training loss: 0.32365965843200684 accuracy: 0.84375
+test loss: 0.7463690042495728 accuracy: 0.5625
+
+epoch: 820
+
+training loss: 0.4874684512615204 accuracy: 0.75
+test loss: 1.299747109413147 accuracy: 0.4375
+
+epoch: 821
+
+training loss: 0.29425373673439026 accuracy: 0.8125
+test loss: 1.3434921503067017 accuracy: 0.5
+
+epoch: 822
+
+training loss: 0.3719906806945801 accuracy: 0.78125
+test loss: 1.0167068243026733 accuracy: 0.6875
+
+epoch: 823
+
+training loss: 0.24728485941886902 accuracy: 0.9375
+test loss: 1.427750587463379 accuracy: 0.5
+
+epoch: 824
+
+training loss: 0.31834107637405396 accuracy: 0.90625
+test loss: 0.9729410409927368 accuracy: 0.6875
+
+epoch: 825
+
+training loss: 0.38101574778556824 accuracy: 0.90625
+test loss: 0.8849321603775024 accuracy: 0.6875
+
+epoch: 826
+
+training loss: 0.24081271886825562 accuracy: 0.84375
+test loss: 1.4938371181488037 accuracy: 0.5625
+
+epoch: 827
+
+training loss: 0.19893890619277954 accuracy: 0.875
+test loss: 1.0451611280441284 accuracy: 0.6875
+
+epoch: 828
+
+training loss: 0.24095451831817627 accuracy: 0.9375
+test loss: 1.8514838218688965 accuracy: 0.5625
+
+epoch: 829
+
+training loss: 0.47328439354896545 accuracy: 0.75
+test loss: 0.5803924798965454 accuracy: 0.8125
+
+epoch: 830
+
+training loss: 0.7532052397727966 accuracy: 0.71875
+test loss: 1.6078109741210938 accuracy: 0.5
+
+epoch: 831
+
+training loss: 0.41649752855300903 accuracy: 0.84375
+test loss: 1.5331496000289917 accuracy: 0.5625
+
+epoch: 832
+
+training loss: 0.3081594705581665 accuracy: 0.875
+test loss: 1.3685771226882935 accuracy: 0.625
+
+epoch: 833
+
+training loss: 0.21987409889698029 accuracy: 0.9375
+test loss: 0.6151527166366577 accuracy: 0.625
+
+epoch: 834
+
+training loss: 0.27436694502830505 accuracy: 0.90625
+test loss: 1.1764322519302368 accuracy: 0.5
+
+epoch: 835
+
+training loss: 0.2658969461917877 accuracy: 0.875
+test loss: 2.1395609378814697 accuracy: 0.4375
+
+epoch: 836
+
+training loss: 0.3183806240558624 accuracy: 0.90625
+test loss: 0.5809494256973267 accuracy: 0.75
+
+epoch: 837
+
+training loss: 0.18881520628929138 accuracy: 0.875
+test loss: 1.0815235376358032 accuracy: 0.75
+
+epoch: 838
+
+training loss: 0.4257051348686218 accuracy: 0.84375
+test loss: 0.5098724365234375 accuracy: 0.625
+
+epoch: 839
+
+training loss: 0.5911954641342163 accuracy: 0.8125
+test loss: 0.8663719892501831 accuracy: 0.75
+
+epoch: 840
+
+training loss: 0.34384530782699585 accuracy: 0.84375
+test loss: 0.7071334719657898 accuracy: 0.6875
+
+epoch: 841
+
+training loss: 0.8608560562133789 accuracy: 0.6875
+test loss: 0.6510854959487915 accuracy: 0.625
+
+epoch: 842
+
+training loss: 0.3291930556297302 accuracy: 0.8125
+test loss: 2.0129542350769043 accuracy: 0.5625
+
+epoch: 843
+
+training loss: 0.4194238781929016 accuracy: 0.78125
+test loss: 1.1561213731765747 accuracy: 0.5
+
+epoch: 844
+
+training loss: 0.23288336396217346 accuracy: 0.90625
+test loss: 1.4258813858032227 accuracy: 0.5625
+
+epoch: 845
+
+training loss: 0.3562042713165283 accuracy: 0.8125
+test loss: 1.1024749279022217 accuracy: 0.5
+
+epoch: 846
+
+training loss: 0.27360326051712036 accuracy: 0.84375
+test loss: 0.23369146883487701 accuracy: 0.8125
+
+epoch: 847
+
+training loss: 0.2636815011501312 accuracy: 0.90625
+test loss: 0.4055521488189697 accuracy: 0.625
+
+epoch: 848
+
+training loss: 0.2287273406982422 accuracy: 0.84375
+test loss: 0.6451308727264404 accuracy: 0.75
+
+epoch: 849
+
+training loss: 0.3779445290565491 accuracy: 0.84375
+test loss: 0.2696026861667633 accuracy: 0.75
+
+epoch: 850
+
+training loss: 0.39878174662590027 accuracy: 0.78125
+test loss: 0.6989095211029053 accuracy: 0.75
+
+epoch: 851
+
+training loss: 0.211448535323143 accuracy: 0.90625
+test loss: 0.34312209486961365 accuracy: 0.75
+
+epoch: 852
+
+training loss: 0.15025371313095093 accuracy: 0.96875
+test loss: 1.3820581436157227 accuracy: 0.6875
+
+epoch: 853
+
+training loss: 0.24242115020751953 accuracy: 0.9375
+test loss: 1.0267360210418701 accuracy: 0.6875
+
+epoch: 854
+
+training loss: 0.5071509480476379 accuracy: 0.8125
+test loss: 1.1894583702087402 accuracy: 0.75
+
+epoch: 855
+
+training loss: 0.2972530126571655 accuracy: 0.90625
+test loss: 0.7824776768684387 accuracy: 0.625
+
+epoch: 856
+
+training loss: 0.37069571018218994 accuracy: 0.875
+test loss: 2.1209189891815186 accuracy: 0.75
+
+epoch: 857
+
+training loss: 0.31601905822753906 accuracy: 0.75
+test loss: 0.5897680521011353 accuracy: 0.8125
+
+epoch: 858
+
+training loss: 0.33764150738716125 accuracy: 0.78125
+test loss: 0.7160961031913757 accuracy: 0.6875
+
+epoch: 859
+
+training loss: 0.2106185257434845 accuracy: 0.875
+test loss: 2.2209713459014893 accuracy: 0.6875
+
+epoch: 860
+
+training loss: 0.46310505270957947 accuracy: 0.6875
+test loss: 0.318240225315094 accuracy: 0.75
+
+epoch: 861
+
+training loss: 0.262096643447876 accuracy: 0.8125
+test loss: 0.9946479797363281 accuracy: 0.6875
+
+epoch: 862
+
+training loss: 0.4604787230491638 accuracy: 0.875
+test loss: 0.3372119665145874 accuracy: 0.8125
+
+epoch: 863
+
+training loss: 0.16910819709300995 accuracy: 0.90625
+test loss: 0.813988208770752 accuracy: 0.6875
+
+epoch: 864
+
+training loss: 0.29603010416030884 accuracy: 0.84375
+test loss: 1.045865774154663 accuracy: 0.8125
+
+epoch: 865
+
+training loss: 0.2489607185125351 accuracy: 0.90625
+test loss: 0.9690447449684143 accuracy: 0.8125
+
+epoch: 866
+
+training loss: 0.30365073680877686 accuracy: 0.90625
+test loss: 0.7589930295944214 accuracy: 0.625
+
+epoch: 867
+
+training loss: 0.256204754114151 accuracy: 0.84375
+test loss: 0.6252142786979675 accuracy: 0.6875
+
+epoch: 868
+
+training loss: 0.25709104537963867 accuracy: 0.875
+test loss: 1.6589360237121582 accuracy: 0.5625
+
+epoch: 869
+
+training loss: 0.26277709007263184 accuracy: 0.9375
+test loss: 0.6649616956710815 accuracy: 0.875
+
+epoch: 870
+
+training loss: 0.20020830631256104 accuracy: 0.875
+test loss: 0.967092752456665 accuracy: 0.75
+
+epoch: 871
+
+training loss: 0.3408285677433014 accuracy: 0.8125
+test loss: 0.5032142996788025 accuracy: 0.8125
+
+epoch: 872
+
+training loss: 0.271834135055542 accuracy: 0.875
+test loss: 0.7359844446182251 accuracy: 0.75
+
+epoch: 873
+
+training loss: 0.18105095624923706 accuracy: 0.96875
+test loss: 0.8745225071907043 accuracy: 0.8125
+
+epoch: 874
+
+training loss: 0.3070773184299469 accuracy: 0.8125
+test loss: 0.4922463893890381 accuracy: 0.75
+
+epoch: 875
+
+training loss: 0.21796530485153198 accuracy: 0.90625
+test loss: 2.1328177452087402 accuracy: 0.6875
+
+epoch: 876
+
+training loss: 0.19685736298561096 accuracy: 0.84375
+test loss: 0.4371185302734375 accuracy: 0.9375
+
+epoch: 877
+
+training loss: 0.25821489095687866 accuracy: 0.8125
+test loss: 0.4203122854232788 accuracy: 0.6875
+
+epoch: 878
+
+training loss: 0.4675384759902954 accuracy: 0.8125
+test loss: 1.6729832887649536 accuracy: 0.6875
+
+epoch: 879
+
+training loss: 0.23012903332710266 accuracy: 0.875
+test loss: 2.309328079223633 accuracy: 0.6875
+
+epoch: 880
+
+training loss: 0.35680800676345825 accuracy: 0.84375
+test loss: 1.3707568645477295 accuracy: 0.625
+
+epoch: 881
+
+training loss: 0.31150704622268677 accuracy: 0.78125
+test loss: 0.7813727855682373 accuracy: 0.8125
+
+epoch: 882
+
+training loss: 0.3461405038833618 accuracy: 0.8125
+test loss: 0.43271443247795105 accuracy: 0.5625
+
+epoch: 883
+
+training loss: 0.3190613090991974 accuracy: 0.84375
+test loss: 0.17305418848991394 accuracy: 0.875
+
+epoch: 884
+
+training loss: 0.10666345804929733 accuracy: 0.96875
+test loss: 0.39566248655319214 accuracy: 0.8125
+
+epoch: 885
+
+training loss: 0.20902487635612488 accuracy: 0.9375
+test loss: 0.25175368785858154 accuracy: 0.8125
+
+epoch: 886
+
+training loss: 0.28285932540893555 accuracy: 0.8125
+test loss: 1.4406765699386597 accuracy: 0.8125
+
+epoch: 887
+
+training loss: 0.2673794627189636 accuracy: 0.78125
+test loss: 0.3998420834541321 accuracy: 0.75
+
+epoch: 888
+
+training loss: 0.29286617040634155 accuracy: 0.8125
+test loss: 0.19737425446510315 accuracy: 0.8125
+
+epoch: 889
+
+training loss: 0.3528609871864319 accuracy: 0.78125
+test loss: 1.2834982872009277 accuracy: 0.625
+
+epoch: 890
+
+training loss: 0.4680796265602112 accuracy: 0.8125
+test loss: 0.515529215335846 accuracy: 0.8125
+
+epoch: 891
+
+training loss: 0.23021696507930756 accuracy: 0.875
+test loss: 0.7080990076065063 accuracy: 0.75
+
+epoch: 892
+
+training loss: 0.23991337418556213 accuracy: 0.875
+test loss: 2.655722141265869 accuracy: 0.375
+
+epoch: 893
+
+training loss: 0.27582114934921265 accuracy: 0.84375
+test loss: 1.0907453298568726 accuracy: 0.625
+
+epoch: 894
+
+training loss: 0.3227121829986572 accuracy: 0.8125
+test loss: 1.3642208576202393 accuracy: 0.6875
+
+epoch: 895
+
+training loss: 0.24724435806274414 accuracy: 0.8125
+test loss: 0.43882375955581665 accuracy: 0.75
+
+epoch: 896
+
+training loss: 0.3336081802845001 accuracy: 0.84375
+test loss: 1.3500196933746338 accuracy: 0.625
+
+epoch: 897
+
+training loss: 0.46733689308166504 accuracy: 0.78125
+test loss: 0.38847625255584717 accuracy: 0.8125
+
+epoch: 898
+
+training loss: 0.3673679232597351 accuracy: 0.71875
+test loss: 0.10171090811491013 accuracy: 0.9375
+
+epoch: 899
+
+training loss: 0.31067949533462524 accuracy: 0.875
+test loss: 1.5194995403289795 accuracy: 0.75
+
+epoch: 900
+
+training loss: 0.22249940037727356 accuracy: 0.90625
+test loss: 0.7038695216178894 accuracy: 0.8125
+
+epoch: 901
+
+training loss: 0.18221846222877502 accuracy: 0.875
+test loss: 0.8232281804084778 accuracy: 0.8125
+
+epoch: 902
+
+training loss: 0.40012767910957336 accuracy: 0.875
+test loss: 0.38490068912506104 accuracy: 0.875
+
+epoch: 903
+
+training loss: 0.6497994065284729 accuracy: 0.75
+test loss: 0.27895116806030273 accuracy: 0.8125
+
+epoch: 904
+
+training loss: 0.27996325492858887 accuracy: 0.8125
+test loss: 0.46690621972084045 accuracy: 0.875
+
+epoch: 905
+
+training loss: 0.531784176826477 accuracy: 0.78125
+test loss: 0.3178560435771942 accuracy: 0.8125
+
+epoch: 906
+
+training loss: 0.35572072863578796 accuracy: 0.9375
+test loss: 0.36185574531555176 accuracy: 0.8125
+
+epoch: 907
+
+training loss: 0.3055345416069031 accuracy: 0.75
+test loss: 0.5746265649795532 accuracy: 0.75
+
+epoch: 908
+
+training loss: 0.40931689739227295 accuracy: 0.78125
+test loss: 0.06676718592643738 accuracy: 1.0
+
+epoch: 909
+
+training loss: 0.6352373361587524 accuracy: 0.8125
+test loss: 0.8414222002029419 accuracy: 0.6875
+
+epoch: 910
+
+training loss: 1.5805317163467407 accuracy: 0.5625
+test loss: 0.6289598941802979 accuracy: 0.9375
+
+epoch: 911
+
+training loss: 4.703003406524658 accuracy: 0.53125
+test loss: 5.759713172912598 accuracy: 0.5
+
+epoch: 912
+
+training loss: 5.623805046081543 accuracy: 0.59375
+test loss: 7.711359024047852 accuracy: 0.4375
+
+epoch: 913
+
+training loss: 5.125585556030273 accuracy: 0.46875
+test loss: 3.0032880306243896 accuracy: 0.6875
+
+epoch: 914
+
+training loss: 4.678415298461914 accuracy: 0.5
+test loss: 4.2597856521606445 accuracy: 0.5
+
+epoch: 915
+
+training loss: 3.326312780380249 accuracy: 0.53125
+test loss: 3.191960334777832 accuracy: 0.5625
+
+epoch: 916
+
+training loss: 3.456007242202759 accuracy: 0.53125
+test loss: 4.4855451583862305 accuracy: 0.25
+
+epoch: 917
+
+training loss: 2.4558494091033936 accuracy: 0.65625
+test loss: 2.6207079887390137 accuracy: 0.625
+
+epoch: 918
+
+training loss: 1.7034649848937988 accuracy: 0.75
+test loss: 4.9748945236206055 accuracy: 0.375
+
+epoch: 919
+
+training loss: 2.520099639892578 accuracy: 0.6875
+test loss: 2.9292469024658203 accuracy: 0.625
+
+epoch: 920
+
+training loss: 4.15866756439209 accuracy: 0.46875
+test loss: 4.753717422485352 accuracy: 0.375
+
+epoch: 921
+
+training loss: 3.5303139686584473 accuracy: 0.53125
+test loss: 3.668940544128418 accuracy: 0.5
+
+epoch: 922
+
+training loss: 2.9307289123535156 accuracy: 0.5625
+test loss: 3.7924463748931885 accuracy: 0.4375
+
+epoch: 923
+
+training loss: 2.9336905479431152 accuracy: 0.5625
+test loss: 3.8941152095794678 accuracy: 0.375
+
+epoch: 924
+
+training loss: 2.4409213066101074 accuracy: 0.59375
+test loss: 2.5488433837890625 accuracy: 0.5625
+
+epoch: 925
+
+training loss: 2.113778829574585 accuracy: 0.6875
+test loss: 1.499584436416626 accuracy: 0.6875
+
+epoch: 926
+
+training loss: 1.774077296257019 accuracy: 0.71875
+test loss: 3.278364658355713 accuracy: 0.4375
+
+epoch: 927
+
+training loss: 2.461519241333008 accuracy: 0.59375
+test loss: 2.806849956512451 accuracy: 0.5625
+
+epoch: 928
+
+training loss: 2.9667444229125977 accuracy: 0.53125
+test loss: 2.647599458694458 accuracy: 0.5
+
+epoch: 929
+
+training loss: 3.0348057746887207 accuracy: 0.5
+test loss: 4.7101945877075195 accuracy: 0.25
+
+epoch: 930
+
+training loss: 2.751723289489746 accuracy: 0.5625
+test loss: 2.05672550201416 accuracy: 0.6875
+
+epoch: 931
+
+training loss: 2.90232515335083 accuracy: 0.53125
+test loss: 3.588649272918701 accuracy: 0.4375
+
+epoch: 932
+
+training loss: 2.620924472808838 accuracy: 0.5625
+test loss: 4.0238213539123535 accuracy: 0.375
+
+epoch: 933
+
+training loss: 2.523782730102539 accuracy: 0.59375
+test loss: 1.7207365036010742 accuracy: 0.6875
+
+epoch: 934
+
+training loss: 2.6583025455474854 accuracy: 0.5625
+test loss: 1.239159107208252 accuracy: 0.8125
+
+epoch: 935
+
+training loss: 2.099184036254883 accuracy: 0.65625
+test loss: 2.909670352935791 accuracy: 0.5
+
+epoch: 936
+
+training loss: 2.3213229179382324 accuracy: 0.625
+test loss: 2.797976016998291 accuracy: 0.5625
+
+epoch: 937
+
+training loss: 1.9043806791305542 accuracy: 0.6875
+test loss: 2.939861536026001 accuracy: 0.4375
+
+epoch: 938
+
+training loss: 2.492980718612671 accuracy: 0.59375
+test loss: 2.079697370529175 accuracy: 0.625
+
+epoch: 939
+
+training loss: 2.126552104949951 accuracy: 0.625
+test loss: 2.444597005844116 accuracy: 0.5625
+
+epoch: 940
+
+training loss: 2.4894986152648926 accuracy: 0.59375
+test loss: 2.592949151992798 accuracy: 0.4375
+
+epoch: 941
+
+training loss: 2.5159897804260254 accuracy: 0.59375
+test loss: 2.9272522926330566 accuracy: 0.375
+
+epoch: 942
+
+training loss: 2.800208806991577 accuracy: 0.5
+test loss: 3.926267385482788 accuracy: 0.375
+
+epoch: 943
+
+training loss: 2.0422658920288086 accuracy: 0.625
+test loss: 1.6797977685928345 accuracy: 0.6875
+
+epoch: 944
+
+training loss: 2.8298022747039795 accuracy: 0.5
+test loss: 1.1989240646362305 accuracy: 0.8125
+
+epoch: 945
+
+training loss: 2.6208112239837646 accuracy: 0.53125
+test loss: 1.6601269245147705 accuracy: 0.5625
+
+epoch: 946
+
+training loss: 2.5926289558410645 accuracy: 0.53125
+test loss: 2.282151222229004 accuracy: 0.625
+
+epoch: 947
+
+training loss: 3.007201671600342 accuracy: 0.46875
+test loss: 2.4835939407348633 accuracy: 0.5625
+
+epoch: 948
+
+training loss: 3.3443565368652344 accuracy: 0.40625
+test loss: 2.429743766784668 accuracy: 0.375
+
+epoch: 949
+
+training loss: 1.9738166332244873 accuracy: 0.65625
+test loss: 2.774110794067383 accuracy: 0.375
+
+epoch: 950
+
+training loss: 1.6484858989715576 accuracy: 0.6875
+test loss: 2.1850593090057373 accuracy: 0.625
+
+epoch: 951
+
+training loss: 1.800825834274292 accuracy: 0.6875
+test loss: 2.9749770164489746 accuracy: 0.5
+
+epoch: 952
+
+training loss: 3.083953857421875 accuracy: 0.40625
+test loss: 3.2879629135131836 accuracy: 0.4375
+
+epoch: 953
+
+training loss: 1.2152743339538574 accuracy: 0.75
+test loss: 2.3504457473754883 accuracy: 0.5625
+
+epoch: 954
+
+training loss: 2.2601568698883057 accuracy: 0.5625
+test loss: 1.7509444952011108 accuracy: 0.6875
+
+epoch: 955
+
+training loss: 2.5302553176879883 accuracy: 0.5
+test loss: 2.656216621398926 accuracy: 0.5
+
+epoch: 956
+
+training loss: 3.0583014488220215 accuracy: 0.40625
+test loss: 1.437548279762268 accuracy: 0.75
+
+epoch: 957
+
+training loss: 2.368134021759033 accuracy: 0.53125
+test loss: 1.7037378549575806 accuracy: 0.6875
+
+epoch: 958
+
+training loss: 1.555532693862915 accuracy: 0.6875
+test loss: 1.9721651077270508 accuracy: 0.625
+
+epoch: 959
+
+training loss: 2.704662799835205 accuracy: 0.4375
+test loss: 1.6627329587936401 accuracy: 0.6875
+
+epoch: 960
+
+training loss: 2.077172040939331 accuracy: 0.59375
+test loss: 1.674841284751892 accuracy: 0.6875
+
+epoch: 961
+
+training loss: 2.4066030979156494 accuracy: 0.53125
+test loss: 2.2236487865448 accuracy: 0.5625
+
+epoch: 962
+
+training loss: 2.197697639465332 accuracy: 0.5625
+test loss: 1.300218939781189 accuracy: 0.75
+
+epoch: 963
+
+training loss: 0.9478399157524109 accuracy: 0.78125
+test loss: 1.663299798965454 accuracy: 0.6875
+
+epoch: 964
+
+training loss: 2.168884038925171 accuracy: 0.53125
+test loss: 1.2576125860214233 accuracy: 0.75
+
+epoch: 965
+
+training loss: 1.6839479207992554 accuracy: 0.625
+test loss: 2.8579518795013428 accuracy: 0.4375
+
+epoch: 966
+
+training loss: 2.0383799076080322 accuracy: 0.5625
+test loss: 1.1409571170806885 accuracy: 0.75
+
+epoch: 967
+
+training loss: 1.746150255203247 accuracy: 0.59375
+test loss: 1.2321422100067139 accuracy: 0.75
+
+epoch: 968
+
+training loss: 2.042910099029541 accuracy: 0.5625
+test loss: 1.8971694707870483 accuracy: 0.625
+
+epoch: 969
+
+training loss: 1.519660234451294 accuracy: 0.6875
+test loss: 1.402113676071167 accuracy: 0.6875
+
+epoch: 970
+
+training loss: 1.4996964931488037 accuracy: 0.65625
+test loss: 1.593888759613037 accuracy: 0.6875
+
+epoch: 971
+
+training loss: 1.2707971334457397 accuracy: 0.71875
+test loss: 2.2985711097717285 accuracy: 0.5
+
+epoch: 972
+
+training loss: 1.516768217086792 accuracy: 0.65625
+test loss: 2.7199249267578125 accuracy: 0.4375
+
+epoch: 973
+
+training loss: 1.8093352317810059 accuracy: 0.59375
+test loss: 3.2194347381591797 accuracy: 0.3125
+
+epoch: 974
+
+training loss: 2.0109341144561768 accuracy: 0.53125
+test loss: 1.7505085468292236 accuracy: 0.625
+
+epoch: 975
+
+training loss: 1.4035321474075317 accuracy: 0.65625
+test loss: 2.248668670654297 accuracy: 0.5
+
+epoch: 976
+
+training loss: 1.7031183242797852 accuracy: 0.5625
+test loss: 1.088471531867981 accuracy: 0.75
+
+epoch: 977
+
+training loss: 2.0857362747192383 accuracy: 0.4375
+test loss: 1.589013934135437 accuracy: 0.625
+
+epoch: 978
+
+training loss: 2.2338175773620605 accuracy: 0.40625
+test loss: 2.665196418762207 accuracy: 0.375
+
+epoch: 979
+
+training loss: 2.2849462032318115 accuracy: 0.40625
+test loss: 1.9479994773864746 accuracy: 0.5625
+
+epoch: 980
+
+training loss: 1.1754536628723145 accuracy: 0.71875
+test loss: 1.5759289264678955 accuracy: 0.625
+
+epoch: 981
+
+training loss: 1.6171901226043701 accuracy: 0.59375
+test loss: 2.6474173069000244 accuracy: 0.375
+
+epoch: 982
+
+training loss: 1.6399028301239014 accuracy: 0.5625
+test loss: 1.6218645572662354 accuracy: 0.625
+
+epoch: 983
+
+training loss: 2.1002702713012695 accuracy: 0.53125
+test loss: 2.0130491256713867 accuracy: 0.5
+
+epoch: 984
+
+training loss: 0.963721752166748 accuracy: 0.625
+test loss: 1.543316125869751 accuracy: 0.5625
+
+epoch: 985
+
+training loss: 1.329154133796692 accuracy: 0.625
+test loss: 1.1322720050811768 accuracy: 0.6875
+
+epoch: 986
+
+training loss: 1.4042766094207764 accuracy: 0.59375
+test loss: 1.6133222579956055 accuracy: 0.5625
+
+epoch: 987
+
+training loss: 1.0687142610549927 accuracy: 0.625
+test loss: 1.238663911819458 accuracy: 0.625
+
+epoch: 988
+
+training loss: 1.0979492664337158 accuracy: 0.625
+test loss: 1.028897762298584 accuracy: 0.6875
+
+epoch: 989
+
+training loss: 1.1805000305175781 accuracy: 0.625
+test loss: 1.1533184051513672 accuracy: 0.6875
+
+epoch: 990
+
+training loss: 1.1408143043518066 accuracy: 0.5625
+test loss: 1.3978421688079834 accuracy: 0.625
+
+epoch: 991
+
+training loss: 0.9241747856140137 accuracy: 0.71875
+test loss: 1.614399790763855 accuracy: 0.5625
+
+epoch: 992
+
+training loss: 1.2309603691101074 accuracy: 0.59375
+test loss: 1.4840296506881714 accuracy: 0.5625
+
+epoch: 993
+
+training loss: 1.5964516401290894 accuracy: 0.5
+test loss: 1.2502951622009277 accuracy: 0.625
+
+epoch: 994
+
+training loss: 1.4291305541992188 accuracy: 0.5
+test loss: 1.5247085094451904 accuracy: 0.5625
+
+epoch: 995
+
+training loss: 1.4985895156860352 accuracy: 0.53125
+test loss: 0.9300361275672913 accuracy: 0.75
+
+epoch: 996
+
+training loss: 1.0738554000854492 accuracy: 0.65625
+test loss: 1.0175403356552124 accuracy: 0.6875
+
+epoch: 997
+
+training loss: 1.1809651851654053 accuracy: 0.59375
+test loss: 1.5086374282836914 accuracy: 0.5625
+
+epoch: 998
+
+training loss: 0.9059789180755615 accuracy: 0.65625
+test loss: 1.8832268714904785 accuracy: 0.375
+
+epoch: 999
+
+training loss: 1.069022297859192 accuracy: 0.59375
+test loss: 1.5999641418457031 accuracy: 0.5625
+
