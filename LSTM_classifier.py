@@ -70,7 +70,7 @@ LSTM_model = Model(inputs, output)
 # optimizers
 sgd = SGD(lr=0.01, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=True)
 
-LSTM_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer=sgd, loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
@@ -80,11 +80,14 @@ def batches(l, n):
         yield l[i:i + n]
 
 
-for epoch in range(1000):
+history = []
+
+
+for epoch in range(10):
 
     print('epoch: {}\n'.format(epoch))
 
-    for batch in batches(train, 32):
+    for batch in batches(train, 16):
         train_y = batch[:, 1, None]
         train_x = []
 
@@ -98,7 +101,7 @@ for epoch in range(1000):
         LSTM_model.train_on_batch(train_x, train_y)
 
     train_val_x = []
-    train_val_batch = train[np.random.choice(len(train), size=32)]
+    train_val_batch = train[np.random.choice(len(train), size=16)]
     train_val_y = train_val_batch[:, 1, None]
 
     for info in train_val_batch:
@@ -109,7 +112,7 @@ for epoch in range(1000):
     train_val_x = pad_sequences(train_val_x)
     loss, acc = LSTM_model.test_on_batch(train_val_x, train_val_y)
 
-    print('training loss: {} accuracy: {}'.format(loss, acc))
+    row = [loss, acc]
 
     test_val_x = []
     test_val_batch = test[np.random.choice(len(test), size=16)]
@@ -123,4 +126,9 @@ for epoch in range(1000):
     test_val_x = pad_sequences(test_val_x)
     loss, acc = LSTM_model.test_on_batch(test_val_x, test_val_y)
 
-    print('test loss: {} accuracy: {}\n'.format(loss, acc))
+    row.append(loss)
+    row.append(acc)
+
+    history.append(row)
+
+np.save('history.npy', history)
