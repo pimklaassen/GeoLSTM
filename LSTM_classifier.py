@@ -130,5 +130,6 @@ for epoch in range(10):
     row.append(acc)
 
     history.append(row)
+    print('epoch {} done'.format(epoch))
 
 np.save('history.npy', history)
