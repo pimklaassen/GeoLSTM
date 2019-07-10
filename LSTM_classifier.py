@@ -62,15 +62,15 @@ features = 6
 inputs = Input(shape=(None, features))
 mask = Masking(mask_value=-1.)(inputs)
 lstm_1 = LSTM(256)(mask)
-# norm = BatchNormalization()(lstm_1)
-output = Dense(1, activation='sigmoid')(lstm_1)
+norm = BatchNormalization()(lstm_1)
+output = Dense(1, activation='sigmoid')(norm)
 
 LSTM_model = Model(inputs, output)
 
 # optimizers
 sgd = SGD(lr=0.01, clipvalue=0.25, momentum=0.0, decay=0.0, nesterov=True)
 
-LSTM_model.compile(optimizer=sgd, loss='binary_crossentropy', metrics=['accuracy'])
+LSTM_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
 
 print(LSTM_model.summary())
 
@@ -93,6 +93,7 @@ for epoch in range(10):
 
         for info in batch:
             fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
+            print(fname)
             sample = np.load(fname) / normalization_values_max
             train_x.append(sample)
 
@@ -103,17 +104,19 @@ for epoch in range(10):
         # TURN THIS ON FOR TESTING ON SMALL SET OF SAMPLES
         break
 
-    train_val_x = []
-    train_val_batch = batch#train[np.random.choice(len(train), size=16)]
-    train_val_y = train_val_batch[:, 1, None]
+    # train_val_x = []
+    # train_val_batch = train[np.random.choice(len(train), size=16)]
+    # train_val_y = train_val_batch[:, 1, None]
 
-    for info in train_val_batch:
-        fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
-        sample = np.load(fname) / normalization_values_max
-        train_val_x.append(sample)
+    # for info in train_val_batch:
+    #     fname = datadir + '_'.join(str(_) for _ in info[1:]) + '.npy'
+    #     sample = np.load(fname) / normalization_values_max
+    #     train_val_x.append(sample)
 
-    train_val_x = pad_sequences(train_val_x)
-    loss, acc = LSTM_model.test_on_batch(train_val_x, train_val_y)
+    # train_val_x = pad_sequences(train_val_x)
+    # loss, acc = LSTM_model.test_on_batch(train_val_x, train_val_y)
+
+    loss, acc = LSTM_model.test_on_batch(train_x, train_y)
 
     row = [loss, acc]
 
